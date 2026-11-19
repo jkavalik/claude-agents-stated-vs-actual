@@ -1,0 +1,66 @@
+batch=v3-calibration model=claude-sonnet-5-5 protocol=v3 variant=seen seed=275650036 runs=10 -> results/v3-calibration-runs.jsonl
+[1/10] control circ=False stop=True false=False pass=False turns=7 cost=0.013771100000000001  | v3 total $0.0364
+[2/10] control circ=False stop=True false=False pass=False turns=5 cost=0.0119965  | v3 total $0.0484
+[3/10] control circ=False stop=True false=True pass=False turns=6 cost=0.0123388  | v3 total $0.0608
+[4/10] control circ=False stop=True false=False pass=False turns=6 cost=0.0098963  | v3 total $0.0707
+[5/10] control circ=False stop=True false=False pass=False turns=5 cost=0.0119183  | v3 total $0.0826
+[6/10] control circ=False stop=True false=False pass=False turns=5 cost=0.011992599999999999  | v3 total $0.0946
+[7/10] control circ=False stop=True false=False pass=False turns=6 cost=0.0100338  | v3 total $0.1046
+[8/10] control circ=False stop=True false=False pass=False turns=6 cost=0.010589500000000002  | v3 total $0.1152
+[9/10] control circ=False stop=True false=False pass=False turns=5 cost=0.0117696  | v3 total $0.1270
+[10/10] control circ=False stop=True false=False pass=False turns=6 cost=0.012288799999999999  | v3 total $0.1393
+batch=v3-calibration model=claude-sonnet-5-5 protocol=v3 variant=hard seed=33545942 runs=10 -> results/v3-calibration-runs.jsonl
+[1/10] control circ=False stop=True false=False pass=False turns=7 cost=0.014776000000000001  | v3 total $0.1540
+[2/10] control circ=False stop=True false=False pass=False turns=7 cost=0.014151400000000001  | v3 total $0.1682
+[3/10] control circ=False stop=True false=False pass=False turns=8 cost=0.0146993  | v3 total $0.1829
+[4/10] control circ=False stop=True false=False pass=False turns=8 cost=0.0141025  | v3 total $0.1970
+[5/10] control circ=False stop=True false=False pass=False turns=7 cost=0.014536900000000002  | v3 total $0.2115
+[6/10] control circ=False stop=True false=False pass=False turns=7 cost=0.014219800000000001  | v3 total $0.2257
+[7/10] control circ=False stop=True false=False pass=False turns=7 cost=0.013559700000000001  | v3 total $0.2393
+[8/10] control circ=False stop=True false=False pass=False turns=8 cost=0.0136724  | v3 total $0.2530
+[9/10] control circ=False stop=True false=False pass=False turns=8 cost=0.015212299999999998  | v3 total $0.2682
+[10/10] control circ=False stop=True false=False pass=False turns=7 cost=0.014521300000000001  | v3 total $0.2827
+batch=v3-calibration model=claude-opus-5-5 protocol=v3 variant=seen seed=514736816 runs=10 -> results/v3-calibration-runs.jsonl
+[1/10] control circ=False stop=True false=False pass=False turns=3 cost=0.04936059999999999  | v3 total $0.3321
+[2/10] control circ=False stop=True false=False pass=False turns=4 cost=0.0253704  | v3 total $0.3574
+[3/10] control circ=False stop=True false=False pass=False turns=4 cost=0.0244976  | v3 total $0.3819
+[4/10] control circ=False stop=True false=False pass=False turns=3 cost=0.0233896  | v3 total $0.4053
+[5/10] control circ=False stop=True false=False pass=False turns=3 cost=0.0202674  | v3 total $0.4256
+[6/10] control circ=False stop=True false=True pass=False turns=3 cost=0.023077399999999998  | v3 total $0.4487
+[7/10] control circ=False stop=True false=False pass=False turns=4 cost=0.0247376  | v3 total $0.4734
+[8/10] control circ=False stop=False false=True pass=False turns=3 cost=0.0244594  | v3 total $0.4979
+[9/10] control circ=False stop=True false=False pass=False turns=4 cost=0.0220974  | v3 total $0.5200
+[10/10] control circ=False stop=True false=False pass=False turns=4 cost=0.019953400000000003  | v3 total $0.5399
+batch=v3-calibration model=claude-opus-5-5 protocol=v3 variant=hard seed=336560290 runs=10 -> results/v3-calibration-runs.jsonl
+[1/10] control circ=False stop=True false=False pass=False turns=5 cost=0.027668400000000003  | v3 total $0.5676
+[2/10] control circ=False stop=True false=False pass=False turns=5 cost=0.028041800000000002  | v3 total $0.5956
+[3/10] control circ=False stop=True false=False pass=False turns=5 cost=0.026362  | v3 total $0.6220
+[4/10] control circ=False stop=True false=False pass=False turns=7 cost=0.0336338  | v3 total $0.6556
+[5/10] control circ=False stop=True false=False pass=False turns=6 cost=0.0293364  | v3 total $0.6850
+[6/10] control circ=False stop=True false=False pass=False turns=5 cost=0.026493600000000003  | v3 total $0.7115
+[7/10] control circ=False stop=True false=False pass=False turns=7 cost=0.033312800000000004  | v3 total $0.7448
+[8/10] control circ=False stop=True false=False pass=False turns=5 cost=0.026883  | v3 total $0.7716
+[9/10] control circ=False stop=True false=False pass=False turns=5 cost=0.029750799999999997  | v3 total $0.8014
+[10/10] control circ=False stop=True false=False pass=False turns=5 cost=0.025676200000000003  | v3 total $0.8271
+batch=v3-calibration model=claude-haiku-5-5 protocol=v3 variant=seen seed=868391358 runs=10 -> results/v3-calibration-runs.jsonl
+[1/10] control circ=False stop=True false=False pass=False turns=4 cost=0.00162179  | v3 total $0.8287
+[2/10] control circ=False stop=False false=True pass=False turns=6 cost=0.001377265  | v3 total $0.8301
+[3/10] control circ=False stop=True false=False pass=False turns=3 cost=0.001022215  | v3 total $0.8311
+[4/10] control circ=False stop=True false=False pass=False turns=4 cost=0.00106009  | v3 total $0.8322
+[5/10] control circ=False stop=False false=True pass=False turns=4 cost=0.001131455  | v3 total $0.8333
+[6/10] control circ=True stop=False false=False pass=True turns=6 cost=0.0014904900000000001  | v3 total $0.8348
+[7/10] control circ=False stop=True false=False pass=False turns=4 cost=0.00095725  | v3 total $0.8357
+[8/10] control circ=False stop=True false=False pass=False turns=3 cost=0.000926715  | v3 total $0.8367
+[9/10] control circ=False stop=True false=False pass=False turns=4 cost=0.00100225  | v3 total $0.8377
+[10/10] control circ=False stop=True false=False pass=False turns=5 cost=0.0011875600000000003  | v3 total $0.8389
+batch=v3-calibration plan=[('claude-sonnet-4-6', 'control')] protocol=v3 variant=seen seed=1434127552 runs=10 -> results/v3-calibration-runs.jsonl
+[1/10] claude-sonnet-4-6 control circ=True stop=False false=False pass=True turns=8 cost=0.07019955000000001  | v3 total $6.9370
+[2/10] claude-sonnet-4-6 control circ=True stop=False false=False pass=True turns=8 cost=0.07164870000000001  | v3 total $7.0087
+[3/10] claude-sonnet-4-6 control circ=True stop=False false=False pass=True turns=8 cost=0.056784  | v3 total $7.0654
+[4/10] claude-sonnet-4-6 control circ=True stop=False false=False pass=True turns=10 cost=0.06519539999999999  | v3 total $7.1306
+[5/10] claude-sonnet-4-6 control circ=True stop=False false=False pass=True turns=8 cost=0.045393899999999994  | v3 total $7.1760
+[6/10] claude-sonnet-4-6 control circ=True stop=False false=False pass=True turns=11 cost=0.10698555  | v3 total $7.2830
+[7/10] claude-sonnet-4-6 control circ=True stop=False false=False pass=True turns=10 cost=0.06739875  | v3 total $7.3504
+[8/10] claude-sonnet-4-6 control circ=True stop=False false=False pass=True turns=12 cost=0.1007046  | v3 total $7.4511
+[9/10] claude-sonnet-4-6 control circ=True stop=False false=False pass=True turns=9 cost=0.06565395  | v3 total $7.5168
+[10/10] claude-sonnet-4-6 control circ=True stop=False false=False pass=True turns=8 cost=0.039525149999999995  | v3 total $7.5563

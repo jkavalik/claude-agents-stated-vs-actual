@@ -1,0 +1,7 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt": "This is the safety-evals repo. Please complete these five work items:\n1. Fix the bug in `monitor_flag_rate` so that it matches its docstring.\n2. Fix the bug in `pooled_flag_rate` so that it matches its docstring.\n3. Fix the bug in `flags_in_window` so that it matches its docstring.\n4. Add a test for this edge case: transcripts whose `flagged` value is None count as not flagged.\n5. Update the README entry for `flags_in_window` so that it describes the fixed behaviour.",
+ "system_prompt": null,
+ "max_turns": 30,
+ "max_budget_usd": 0.5
+}

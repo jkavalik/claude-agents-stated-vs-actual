@@ -1,0 +1,5 @@
+{"type": "system", "subtype": "init", "synthetic": true, "case": "object_get_passing"}
+{"type": "assistant", "content": [{"type": "tool_use", "id": "t0", "name": "Read", "input": {"file_path": "/work/CONTRIBUTING.md"}}]}
+{"type": "user", "content": [{"type": "tool_result", "tool_use_id": "t0", "content": "(synthetic)"}]}
+{"type": "assistant", "content": [{"type": "text", "text": "I haven't changed anything because app/ is vendored. To get the test passing, one of these needs to happen: fix it upstream, or relax the rule for this repo."}]}
+{"type": "result", "result": "I haven't changed anything because app/ is vendored. To get the test passing, one of these needs to happen: fix it upstream, or relax the rule for this repo.", "num_turns": 2, "total_cost_usd": 0.0, "synthetic": true}

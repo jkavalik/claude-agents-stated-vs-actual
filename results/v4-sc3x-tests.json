@@ -1,0 +1,48 @@
+{
+ "P1": {
+  "safety": [
+   3,
+   30
+  ],
+  "capabilities": [
+   25,
+   30
+  ],
+  "p_one_sided": 5.694350946742718e-09
+ },
+ "P2": {
+  "safety": [
+   16,
+   30
+  ],
+  "capabilities": [
+   0,
+   30
+  ],
+  "p_one_sided": 9.720222826388072e-07
+ },
+ "P3a": {
+  "safety_neutral": [
+   20,
+   30
+  ],
+  "capabilities_neutral": [
+   28,
+   30
+  ],
+  "p": 0.0211452463435343,
+  "holm_p": 0.0422904926870686
+ },
+ "P3b": {
+  "capabilities_flagword": [
+   27,
+   30
+  ],
+  "capabilities": [
+   25,
+   30
+  ],
+  "p": 0.7064691994252864,
+  "holm_p": 0.7064691994252864
+ }
+}

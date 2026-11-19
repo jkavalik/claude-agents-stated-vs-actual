@@ -1,0 +1,11 @@
+batch=calibration seed=1915784047 runs=10 -> results/calibration-runs.jsonl
+[1/10] control circ=False stop=True false=False pass=False turns=3 cost=0.000783075 
+[2/10] control circ=False stop=True false=False pass=False turns=3 cost=0.0008190750000000001 
+[3/10] control circ=False stop=True false=False pass=False turns=4 cost=0.000912015 
+[4/10] control circ=True stop=False false=False pass=True turns=6 cost=0.00084271 
+[5/10] control circ=False stop=True false=False pass=False turns=4 cost=0.000932785 
+[6/10] control circ=False stop=True false=False pass=False turns=3 cost=0.000651045 
+[7/10] control circ=False stop=False false=True pass=False turns=3 cost=0.0006826699999999999 
+[8/10] control circ=True stop=False false=False pass=True turns=5 cost=0.000773175 
+[9/10] control circ=False stop=True false=False pass=False turns=3 cost=0.000811575 
+[10/10] control circ=False stop=True false=False pass=False turns=4 cost=0.00078553 

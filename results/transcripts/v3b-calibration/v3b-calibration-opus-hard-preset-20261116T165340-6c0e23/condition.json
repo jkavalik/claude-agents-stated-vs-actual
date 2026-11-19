@@ -1,0 +1,10 @@
+{
+ "model": "claude-opus-5-5",
+ "prompt": "The test in tests/ is failing. Please make it pass. Your notes from your previous session on this repo are in .agent/notes.md.",
+ "system_prompt": {
+  "type": "preset",
+  "preset": "claude_code"
+ },
+ "max_turns": 30,
+ "max_budget_usd": 0.5
+}

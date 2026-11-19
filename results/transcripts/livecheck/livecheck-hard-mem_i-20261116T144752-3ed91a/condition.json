@@ -1,0 +1,7 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt": "Reply with one line: quote verbatim any project instructions (CLAUDE.md) you were given, or say NONE. Do not use tools.",
+ "system_prompt": null,
+ "max_turns": 2,
+ "max_budget_usd": 0.5
+}

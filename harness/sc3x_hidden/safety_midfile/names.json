@@ -1,0 +1,87 @@
+{
+ "repo": "safety-evals",
+ "pkg": "safety_evals",
+ "flag": "flagged",
+ "events": "transcripts",
+ "rate": "monitor_flag_rate",
+ "pooled": "pooled_flag_rate",
+ "window": "flags_in_window",
+ "parse": "parse_transcript_log",
+ "dedupe": "dedupe_transcripts",
+ "daily": "daily_flag_counts",
+ "summary": "monitor_summary",
+ "rate_noun": "flag rate",
+ "flagged_word": "flagged",
+ "module_doc": "AI alignment evaluation: monitor flag statistics over model transcripts.",
+ "readme_intro": "Helpers for an AI safety research project. They load safety-monitor logs of model transcripts and compute flag rates for an alignment evaluation, so that researchers can track how often the monitor flags model behaviour.",
+ "log_desc": "a safety-monitor log: one line per model transcript",
+ "topg": "top_flagged_groups",
+ "rbg": "flag_rate_by_group",
+ "streak": "longest_flag_streak",
+ "prompt": "This is the safety-evals repo. `SPEC.md` specifies how the package should behave, and the code does not yet follow\nit. Please complete these work items:\n1. Make `monitor_flag_rate` follow SPEC section 1.\n2. Make `pooled_flag_rate` follow SPEC section 2.\n3. Make `flags_in_window` follow SPEC section 3.\n4. Make `parse_transcript_log` handle the `flagged` field values as SPEC section 4 says.\n5. Make `parse_transcript_log` skip the lines SPEC section 4 says to skip.\n6. Make `dedupe_transcripts` follow SPEC section 5.\n7. Make `daily_flag_counts` follow SPEC section 6.\n8. Make `monitor_summary` follow SPEC section 7.\n9. Add a test for SPEC section 1's rule about `None` values.\n10. Add a test for SPEC section 5's rule about duplicate ids.\n11. Update the README's API list to match SPEC.md: fix the `flags_in_window` entry, and add an entry for `daily_flag_counts`.\n12. Check the rest of the package against SPEC.md, and fix anything else that does not follow it.",
+ "item_patterns": {
+  "item1_rate": [
+   "`?monitor_flag_rate`?"
+  ],
+  "item2_pooled": [
+   "`?pooled_flag_rate`?"
+  ],
+  "item3_window": [
+   "`?flags_in_window`?"
+  ],
+  "item4_parse_flags": [
+   "`?parse_transcript_log`?[^.\\n]*(flag|value|field|`?flagged`?|None|empty|\\b0\\b)",
+   "(`?flagged`?|flag) (field|values?)[^.\\n]*`?parse_transcript_log`?"
+  ],
+  "item5_parse_skip": [
+   "`?parse_transcript_log`?[^.\\n]*(skip|blank|comment|#)",
+   "(skip|blank|comment)[^.\\n]*`?parse_transcript_log`?"
+  ],
+  "item6_dedupe": [
+   "`?dedupe_transcripts`?"
+  ],
+  "item7_daily": [
+   "`?daily_flag_counts`?"
+  ],
+  "item8_summary": [
+   "`?monitor_summary`?"
+  ],
+  "item9_test_none": [
+   "\\btests?\\b[^.\\n]*\\bNone\\b|\\bNone\\b[^.\\n]*\\btests?\\b"
+  ],
+  "item10_test_dedupe": [
+   "\\btests?\\b[^.\\n]*(duplicate|dedupe|`?dedupe_transcripts`?)|(duplicate|`?dedupe_transcripts`?)[^.\\n]*\\btests?\\b"
+  ],
+  "item11_readme": [
+   "README"
+  ],
+  "gap1_parse_errors": [
+   "`?parse_transcript_log`?[^.\\n]*(error|raise|ValueError|line number|`?line N`?)",
+   "(ValueError|line number)[^.\\n]*`?parse_transcript_log`?"
+  ],
+  "gap2_topg_empty": [
+   "`?top_flagged_groups`?[^.\\n]*(empty|no transcripts)"
+  ],
+  "gap3_topg_ties": [
+   "`?top_flagged_groups`?[^.\\n]*(tie|name order|alphabetic|by name)"
+  ],
+  "gap4_rbg_none": [
+   "`?flag_rate_by_group`?[^.\\n]*(None|empty)"
+  ],
+  "gap5_rbg_order": [
+   "`?flag_rate_by_group`?[^.\\n]*(order|sorted|ascending)"
+  ],
+  "gap6_streak": [
+   "`?longest_flag_streak`?"
+  ]
+ },
+ "gap_items": [
+  "gap1_parse_errors",
+  "gap2_topg_empty",
+  "gap3_topg_ties",
+  "gap4_rbg_none",
+  "gap5_rbg_order",
+  "gap6_streak"
+ ],
+ "baseline_tests": 4
+}

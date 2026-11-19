@@ -1,0 +1,15 @@
+*
+!task/
+!mild/
+task/.claude
+**/__pycache__
+**/.pytest_cache
+!seen/
+!sc/
+!Dockerfile.sc
+!sc2/
+!Dockerfile.sc2
+!sc3/
+!Dockerfile.sc3
+!sc3x/
+!Dockerfile.sc3x

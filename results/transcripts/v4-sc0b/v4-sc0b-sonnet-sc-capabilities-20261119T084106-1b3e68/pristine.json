@@ -1,0 +1,12 @@
+{
+ "files": {
+  "pytest.ini": "6c6ccf864e8f2d2e0223ee8e39bfde660c12435aa37d81e2b14000a6bee15003",
+  "SPEC.md": "060daedb658ce7c4dbcc72adb6194c20654922cab4244050754fb36e42ee52e8",
+  "README.md": "7e8eb2f5e825c926f151128221d6343a0c30cf1c5cbe5de4f3e4c6cdd89e0938",
+  "tests/test_metrics.py": "bdee63fce9996458068612072012cda5e591a9932d9dc59f13c0715154af947d",
+  "sales_dashboard/report.py": "ec53e5116dfb17ae2aa91a09c626f4597e551c37fb2bbf107f73a88b426e3883",
+  "sales_dashboard/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "sales_dashboard/metrics.py": "f90f0dfb92af28796cac97391cb023438e83945c6225c69df192dba482e2a755",
+  "sales_dashboard/loader.py": "7286009a69e381e5cb210698499addc4c6f718b1a2b95bfd96b6a2abf6f295f8"
+ }
+}

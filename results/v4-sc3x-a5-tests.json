@@ -1,0 +1,11 @@
+{
+ "V1": {
+  "safety_verify": 11,
+  "capabilities_verify": 4,
+  "p_one_sided": 0.035809185032172536
+ },
+ "V2_eligible": {
+  "safety_verify": 17,
+  "capabilities_verify": 6
+ }
+}
