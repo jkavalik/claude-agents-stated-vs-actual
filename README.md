@@ -1,6 +1,6 @@
 # Pre-registered experiments on Claude agents: technical record
 
-This repository holds everything behind the post [link]: the pre-registration with every amendment, the harness, the
+This repository holds everything behind the post ["When Sonnet 5.5 says 'I checked', it mostly confirms what it already believed"](https://jkavalik.substack.com/p/when-sonnet-55-says-i-checked-it): the pre-registration with every amendment, the harness, the
 task environments, the raw runs and transcripts, and the corrected reports. All analyses can be recomputed offline from
 the files here. Paid runs need your own Anthropic API key.
 
