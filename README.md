@@ -52,7 +52,9 @@ the files here. Paid runs need your own Anthropic API key.
 - Designed, built, run and analyzed largely by a Claude Code session under the author's decisions; Claude models were thus
   testing Claude models, which is why everything needed to recompute the results is published. The author approved
   every design and amendment before data and ran every paid batch.
-- Independent review: three fresh-eyes reviewers, then a second pass on the corrections. Every registered number
+- Independent review: three fresh-eyes reviewers, then a second pass on the corrections. The exact prompts, how the
+  reviewers were run (including the limits of their independence) and their full reports are in
+  `results/review-prompts.md`. Every registered number
   reproduced; wording, counts and scope were corrected as logged in each report.
 - Spend: about $57 in total (round v3 $18.19; round v4 $38.35; earlier pilot runs under $1).
 
