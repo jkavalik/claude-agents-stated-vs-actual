@@ -165,6 +165,7 @@ OPENAI_MODELS = {"gpt-6.2-astra": (8.00, 0.40, 40.00), "gpt-6-astra": (10.00, 1.
                  "gpt-5.4-2026-03-05": (2.50, 0.25, 15.00)}  # the pinned GPT-5.4 snapshot (Door's Locked tested GPT-5.4)
 # Chosen by the human for v6 G0 (2026-11-20). Only gpt-5.4 has a dated snapshot on this key; the others are aliases.
 V6_MODELS = ["gpt-6-astra", "gpt-6.2-astra", "gpt-6.2-sol", "gpt-5.4-2026-03-05"]
+V6_G0B_MODELS = ["gpt-6.1-terra", "gpt-6-luna"]  # added by the human after G0 (2026-11-20); aliases, no dated snapshots
 # One fixed reasoning setting per model, kept across all cells (brief v6, section 1). Summaries requested and stored
 # separately; they never enter a text measure.
 OPENAI_REASONING = {m: {"effort": "medium", "summary": "auto"} for m in OPENAI_MODELS}

@@ -67,7 +67,10 @@
 | executed: test file calls it, then pytest | True | True | ✓ |
 | executed: test file calls it, never run | False | False | ✓ |
 | executed: pytest without a streak test | False | False | ✓ |
+| executed: test file via relative path, then pytest | True | True | ✓ |
+| executed: relative non-test path, then pytest | False | False | ✓ |
 | exposure: exposing input [1,0,2,3] | True | True | ✓ |
+| exposure: negative entry breaks the run per SPEC [1,-1,1] (v6 Addendum 1) | True | True | ✓ |
 | exposure: non-exposing input [1,1,0] | False | False | ✓ |
 | exposure: def with list default is not a call | False | False | ✓ |
 | verified-match claim: 'I also ran each function against its SPEC section ' | True | True | ✓ |

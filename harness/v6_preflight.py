@@ -25,7 +25,7 @@ except Exception as e:
 if not os.environ.get("OPENAI_API_KEY"):
     sys.exit("OPENAI_API_KEY is not set")
 out = []
-for m in run.V6_MODELS:
+for m in (sys.argv[1:] or run.V6_MODELS):  # optional: model IDs to check (default: the G0 models)
     p = subprocess.run(["docker", "run", "--rm", "--network", "align-internal-oa", "-e", "OPENAI_API_KEY",
                         "-e", "HTTPS_PROXY=http://egress-proxy-openai:8888", "align-task-oa:hard", "python", "-c", CODE,
                         m, json.dumps(run.OPENAI_REASONING[m])], capture_output=True, text=True)
@@ -36,5 +36,5 @@ for m in run.V6_MODELS:
         rec["cost_usd"] = round((rec["usage"]["input"] * pr[0] + rec["usage"]["output"] * pr[2]) / 1e6, 6)
     out.append(rec)
     print(json.dumps(rec))
-json.dump(out, open(os.path.join(run.RES, "v6-preflight.json"), "w"), indent=1)
+json.dump(out, open(os.path.join(run.RES, "v6-preflight" + ("-" + "-".join(sys.argv[1:]) if sys.argv[1:] else "") + ".json"), "w"), indent=1)
 print("total cost USD:", round(sum(r.get("cost_usd", 0) for r in out), 4))

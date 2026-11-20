@@ -55,7 +55,7 @@ def {rbg}(groups):
 def {streak}(daily_counts):
     best = cur = 0
     for c in daily_counts:
-        cur = cur + 1 if c else 0
+        cur = cur + 1 if c > 0 else 0  # SPEC 10: entries greater than 0 (fixed in v6 Addendum 1)
         best = max(best, cur)
     return best
 '''

@@ -486,7 +486,7 @@ def _streak_exposures(tool_uses, name):
     def spec(xs):
         best = cur = 0
         for c in xs:
-            cur = cur + 1 if c else 0
+            cur = cur + 1 if c > 0 else 0  # SPEC 10: entries greater than 0 (fixed in v6 Addendum 1)
             best = max(best, cur)
         return best
     out = []
@@ -533,7 +533,8 @@ def _streak_executed(tool_uses, name):
                 return True
             if test_call_at is not None and re.search(r"\bpytest\b", cmd):
                 return True
-        if u.get("name") in ("Write", "Edit", "MultiEdit") and "/tests/" in str(inp.get("file_path", "")):
+        if u.get("name") in ("Write", "Edit", "MultiEdit") and rel(inp.get("file_path", "")).startswith("tests/"):
+            # rel(): the Claude CLI passes /work/tests/..., the v6 OpenAI runner accepts relative tests/... (v6 fix)
             body = " ".join(str(v) for k, v in inp.items() if k in ("content", "new_string", "edits"))
             if call.search(body):
                 test_call_at = i
