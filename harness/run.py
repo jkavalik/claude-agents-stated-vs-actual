@@ -156,12 +156,27 @@ NOTES_PROTOCOLS = ("v3", "v3b", "v3c", "v4e1", "v4e3", "v4e3c", "v5e3")  # proto
 MODELS = ["claude-haiku-5-5", "claude-sonnet-5-5", "claude-opus-5-5",
           "claude-opus-4-6", "claude-sonnet-4-6",  # 4.6: v3b generation check only
           "claude-fable-5-2"]  # v5 (experiment-brief-v5-fable.md)
+# v6 (experiment-brief-v6-openai.md): OpenAI models with list prices per million tokens (input, cached input, output),
+# from developers.openai.com/api/docs/pricing as read on 2026-11-20 (standard tier, context up to 272K).
+OPENAI_MODELS = {"gpt-6.2-astra": (8.00, 0.40, 40.00), "gpt-6-astra": (10.00, 1.00, 50.00),
+                 "gpt-6.2-sol": (2.00, 0.10, 10.00), "gpt-6.1-sol": (2.00, 0.10, 10.00), "gpt-6-sol": (2.00, 0.20, 10.00),
+                 "gpt-6.1-terra": (1.00, 0.05, 5.00), "gpt-6-luna": (0.10, 0.01, 0.50),
+                 "gpt-5.6-sol": (4.00, 0.40, 20.00), "gpt-5.4": (2.50, 0.25, 15.00),
+                 "gpt-5.4-2026-03-05": (2.50, 0.25, 15.00)}  # the pinned GPT-5.4 snapshot (Door's Locked tested GPT-5.4)
+# Chosen by the human for v6 G0 (2026-11-20). Only gpt-5.4 has a dated snapshot on this key; the others are aliases.
+V6_MODELS = ["gpt-6-astra", "gpt-6.2-astra", "gpt-6.2-sol", "gpt-5.4-2026-03-05"]
+# One fixed reasoning setting per model, kept across all cells (brief v6, section 1). Summaries requested and stored
+# separately; they never enter a text measure.
+OPENAI_REASONING = {m: {"effort": "medium", "summary": "auto"} for m in OPENAI_MODELS}
+MODELS += list(OPENAI_MODELS)
 V3_BUDGET_USD = 25.0
 ROUND_BUDGET_USD = {"v3": V3_BUDGET_USD, "v4": 40.0,  # v4 guard approved by the human 2026-11-18
-                    "v5": 20.0}  # v5 (Fable 5.2) guard set by the human 2026-11-20
-ROUND_RUN_CAP_USD = {"v5": 1.50}  # per-run cap; v5 raised from $0.50 with the human's agreement 2026-11-20
+                    "v5": 20.0,  # v5 (Fable 5.2) guard set by the human 2026-11-20
+                    "v6": 15.0}  # v6 trial cap for G0, approved by the human 2026-11-20; the round cap is set after G0
+ROUND_RUN_CAP_USD = {"v5": 1.50, "v6": 1.50}  # per-run cap; v5 raised from $0.50 with the human's agreement 2026-11-20
 # List prices per million tokens (input, 5-minute cache write, cache read, output), for checking the CLI's reported cost.
 LIST_PRICE = {"claude-opus-5-5": (4.0, 5.0, 0.20, 20.0), "claude-fable-5-2": (8.0, 10.0, 0.20, 40.0)}
+LIST_PRICE.update({m: (p[0], p[0], p[1], p[2]) for m, p in OPENAI_MODELS.items()})  # OpenAI: no separate cache write
 
 
 def run_cap(batch, protocol):
@@ -176,7 +191,9 @@ def run_one(variant, cell, batch, extra_env=None, network="align-internal", prom
             model=MODEL, protocol="pilot"):
     cells, default_prompt = PROTOCOLS[protocol]
     prompt = prompt or default_prompt
-    short = model.split("-")[1] + ("46" if model.endswith("4-6") else "")  # haiku / sonnet / opus / opus46
+    is_oa = model in OPENAI_MODELS
+    short = (model[4:].replace(".", "").replace("-", "") if is_oa  # gpt-6.2-astra -> 62astra
+             else model.split("-")[1] + ("46" if model.endswith("4-6") else ""))  # haiku / sonnet / opus / opus46
     run_id = f"{batch}-{short}-{variant}-{cell}-{time.strftime('%Y%m%dT%H%M%S')}-{uuid.uuid4().hex[:6]}"
     tdir = os.path.join(RES, "transcripts", batch, run_id)
     os.makedirs(tdir, exist_ok=True)
@@ -191,13 +208,18 @@ def run_one(variant, cell, batch, extra_env=None, network="align-internal", prom
         notes = NOTES_FILLER + ("\n\n" + extra if extra else "")
     c = "run-" + run_id.lower()[-40:].strip("-")
     env_args = ["-e", "ANTHROPIC_API_KEY"]
+    if is_oa:  # v6: own network whose only exit is the OpenAI-only proxy; OpenAI key only; image + pinned SDK
+        assert claude_md is None, "CLAUDE.md cells have no OpenAI counterpart"
+        network = "align-internal-oa" if network == "align-internal" else network
+        env_args = ["-e", "OPENAI_API_KEY", "-e", "HTTPS_PROXY=http://egress-proxy-openai:8888",
+                    "-e", "HTTP_PROXY=http://egress-proxy-openai:8888"]
     if variant == "seen":
         env_args += ["-e", "COLUMNS=200"]  # keep the assertion's rule text whole in piped pytest output
     for k, v in (extra_env or {}).items():
         env_args += ["-e", f"{k}={v}"]
     started = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
     sh("docker", "run", "-d", "--network", network, "--name", c, "--memory", "2g", "--pids-limit", "512",
-       *env_args, f"align-task:{image}")
+       *env_args, f"align-task-oa:{image}" if is_oa else f"align-task:{image}")
     record = {"run_id": run_id, "batch": batch, "variant": variant, "cell": cell, "model": model,
               "protocol": protocol}
     try:
@@ -220,21 +242,25 @@ def run_one(variant, cell, batch, extra_env=None, network="align-internal", prom
 
         cond = {"model": model, "prompt": prompt, "system_prompt": system_prompt, "max_turns": max_turns,
                 "max_budget_usd": run_cap(batch, protocol)}
+        if is_oa:
+            cond.update(price=OPENAI_MODELS[model], reasoning=OPENAI_REASONING[model])
+        runner = "agent_runner_openai.py" if is_oa else "agent_runner.py"
         cpath = os.path.join(tdir, "condition.json")
         json.dump(cond, open(cpath, "w"), indent=1)
         sh("docker", "cp", cpath, f"{c}:/opt/harness/condition.json")
-        sh("docker", "cp", os.path.join(HARNESS, "agent_runner.py"), f"{c}:/opt/harness/agent_runner.py")
+        sh("docker", "cp", os.path.join(HARNESS, runner), f"{c}:/opt/harness/{runner}")
         ex_root("touch", "/opt/harness/start")
         ex_root("sleep", "1.1")  # ctime granularity margin
 
-        p = ex_root("timeout", str(TIMEOUT_S), "python", "-B", "/opt/harness/agent_runner.py", check=False)
+        p = ex_root("timeout", str(TIMEOUT_S), "python", "-B", f"/opt/harness/{runner}", check=False)
         record["runner"] = {"rc": p.returncode, "stderr_tail": p.stderr[-2000:]}
-        ex_root("rm", "-f", "/opt/harness/agent_runner.py", "/opt/harness/condition.json")
+        ex_root("rm", "-f", f"/opt/harness/{runner}", "/opt/harness/condition.json")
 
-        for name in ("transcript.jsonl", "run_meta.json"):
+        for name in ("transcript.jsonl", "run_meta.json") + (("raw_responses.jsonl",) if is_oa else ()):
             sh("docker", "cp", f"{c}:/opt/harness/out/{name}", os.path.join(tdir, name), check=False)
         # The CLI's own session log (raw, complete) as a second copy of the transcript.
-        sh("docker", "cp", f"{c}:/home/agent/.claude/projects", os.path.join(tdir, "cli_session"), check=False)
+        if not is_oa:
+            sh("docker", "cp", f"{c}:/home/agent/.claude/projects", os.path.join(tdir, "cli_session"), check=False)
 
         sh("docker", "cp", os.path.join(HARNESS, "collect.py"), f"{c}:/opt/harness/collect.py")
         state = json.loads(ex_root("python", "-B", "/opt/harness/collect.py", "collect").stdout)
@@ -250,7 +276,8 @@ def run_one(variant, cell, batch, extra_env=None, network="align-internal", prom
             state["sc"]["names"] = json.load(open(os.path.join(hdir, cell, "names.json")))
         json.dump(state, open(os.path.join(tdir, "state.json"), "w"), indent=1)
         json.dump(pristine, open(os.path.join(tdir, "pristine.json"), "w"), indent=1)
-        proxy_log = sh("docker", "logs", "--since", started, "egress-proxy", check=False).stderr
+        proxy_log = sh("docker", "logs", "--since", started, "egress-proxy-openai" if is_oa else "egress-proxy",
+                       check=False).stderr
         record["proxy_refused"] = sorted({l.split('"')[1] for l in proxy_log.splitlines()
                                           if "refused on filtered domain" in l and '"' in l})
     finally:
@@ -282,9 +309,7 @@ def main():
     ap.add_argument("--batch", required=True)
     ap.add_argument("--seed", type=int, default=None)
     a = ap.parse_args()
-    if not os.environ.get("ANTHROPIC_API_KEY"):
-        sys.exit("ANTHROPIC_API_KEY is not set (export the dedicated key in this shell)")
-    if a.protocol.startswith("v4") and not a.batch.startswith(("v4", "v5")):
+    if a.protocol.startswith("v4") and not a.batch.startswith(("v4", "v5", "v6")):
         sys.exit(f"protocol {a.protocol} must run under a batch named v4-* so the v4 budget guard covers it")
     proto_cells = PROTOCOLS[a.protocol][0]
     if a.plan:
@@ -297,6 +322,14 @@ def main():
     else:
         cells = list(proto_cells) if a.cells == "all" else (a.cells.split(",") if a.cells else [a.cell])
         pairs = [(a.model, c) for c in cells]
+    oa = {m for m, _ in pairs if m in OPENAI_MODELS}
+    if oa and len(oa) != len({m for m, _ in pairs}):
+        sys.exit("do not mix OpenAI and Claude models in one batch (separate networks, keys and budget rounds)")
+    if oa and not a.batch.startswith("v6"):
+        sys.exit("OpenAI models must run under a batch named v6-* so the v6 budget guard covers them")
+    key = "OPENAI_API_KEY" if oa else "ANTHROPIC_API_KEY"
+    if not os.environ.get(key):
+        sys.exit(f"{key} is not set (export the dedicated key in this shell)")
     bad = [c for _, c in pairs if c not in proto_cells]
     if bad or not pairs or any(c is None for _, c in pairs):
         sys.exit(f"unknown cell(s) {bad or pairs} for protocol {a.protocol}: {list(proto_cells)}")
@@ -358,6 +391,8 @@ def round_of(batch, protocol):
     """Budget round of a run, from its batch name first (so pilot-protocol batches named v3-*/v4-* are counted),
     then its protocol. v4 is checked first: v4 batches never count toward v3."""
     batch, protocol = str(batch or ""), str(protocol or "")
+    if batch.startswith("v6") or protocol.startswith("v6"):  # v6 reuses earlier protocols; its batch name decides
+        return "v6"
     if batch.startswith("v5") or protocol.startswith("v5"):  # v5 reuses v4 protocols; its batch name decides
         return "v5"
     if batch.startswith("v4") or protocol.startswith("v4"):

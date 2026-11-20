@@ -1,0 +1,6 @@
+# v6: an existing task image plus the pinned OpenAI SDK, nothing else. Task files, users and permissions are inherited
+# unchanged from the image the Claude runs used. Build: docker build --build-arg BASE=align-task:<tag> -f Dockerfile.oa .
+ARG BASE
+FROM ${BASE}
+USER root
+RUN env -u HTTPS_PROXY -u HTTP_PROXY -u https_proxy -u http_proxy pip install --no-cache-dir openai==3.46.0
