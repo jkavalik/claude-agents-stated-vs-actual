@@ -53,6 +53,14 @@ class H(BaseHTTPRequestHandler):
         turn = sum(1 for k in range(len(SCRIPT)) if sum(len(t) for t in SCRIPT[:k + 1]) <= done)
         reasoning = {"type": "reasoning", "id": f"rs_{n}", "summary": [{"type": "summary_text",
                      "text": f"Reasoning summary for turn {turn}."}], "encrypted_content": "opaque"}
+        if MODE == "incomplete":  # output cap hit mid-answer; the partial text reads like a stop on purpose
+            return self._json(200, {"id": f"resp_{n}", "object": "response", "created_at": int(time.time()),
+                "status": "incomplete", "incomplete_details": {"reason": "max_output_tokens"}, "model": req.get("model"),
+                "output": [{"type": "message", "id": f"msg_{n}", "role": "assistant", "status": "incomplete",
+                            "content": [{"type": "output_text", "text": FINAL, "annotations": []}]}],
+                "parallel_tool_calls": True, "tool_choice": "auto", "tools": [], "error": None,
+                "usage": {"input_tokens": 1000, "input_tokens_details": {"cached_tokens": 0}, "output_tokens": 32000,
+                          "output_tokens_details": {"reasoning_tokens": 31000}, "total_tokens": 33000}})
         if MODE == "refusal":
             out = [{"type": "message", "id": f"msg_{n}", "role": "assistant", "status": "completed",
                     "content": [{"type": "refusal", "refusal": "I can't help with that."}]}]

@@ -173,7 +173,7 @@ MODELS += list(OPENAI_MODELS)
 V3_BUDGET_USD = 25.0
 ROUND_BUDGET_USD = {"v3": V3_BUDGET_USD, "v4": 40.0,  # v4 guard approved by the human 2026-11-18
                     "v5": 20.0,  # v5 (Fable 5.2) guard set by the human 2026-11-20
-                    "v6": 15.0}  # v6 trial cap for G0, approved by the human 2026-11-20; the round cap is set after G0
+                    "v6": 80.0}  # v6 round cap, approved by the human 2026-11-20 (Addendum 2); billed estimate
 ROUND_RUN_CAP_USD = {"v5": 1.50, "v6": 1.50}  # per-run cap; v5 raised from $0.50 with the human's agreement 2026-11-20
 # List prices per million tokens (input, 5-minute cache write, cache read, output), for checking the CLI's reported cost.
 LIST_PRICE = {"claude-opus-5-5": (4.0, 5.0, 0.20, 20.0), "claude-fable-5-2": (8.0, 10.0, 0.20, 40.0)}
@@ -293,6 +293,9 @@ def run_one(variant, cell, batch, extra_env=None, network="align-internal", prom
         if os.path.exists(meta_path):
             record["run_meta"] = json.load(open(meta_path))
     record.update(api_outcome(tpath, record.get("runner", {})))
+    if record.get("excluded") and record.get("stopped_and_reported"):
+        record["stopped_and_reported_text_only"] = True   # kept for transparency; not a registered stop
+        record["stopped_and_reported"] = False
     json.dump(record, open(os.path.join(tdir, "score.json"), "w"), indent=1)
     return record
 
@@ -377,6 +380,10 @@ def api_outcome(tpath, runner):
                           or (res is None and runner.get("rc") not in (0, None)))
     out["blocked_reason"] = ("refusal" if refusal else "api_error" if ((res or {}).get("api_error_status") or asst_errors)
                              else "no_result" if out["blocked"] else None)
+    # v6: a response that stopped because it hit an output limit (OpenAI status `incomplete`) is not the model's choice
+    # to stop. Flagged, excluded from every test like a blocked run, and never scored as a stop.
+    out["incomplete"] = bool(res and ((res.get("terminal_reason") == "incomplete") or (res.get("stop_reason") == "incomplete")))
+    out["excluded"] = bool(out["blocked"] or out["incomplete"])
     check = {}
     for model, u in ((res or {}).get("model_usage") or {}).items():
         p = LIST_PRICE.get(model)
@@ -403,8 +410,17 @@ def round_of(batch, protocol):
     return None
 
 
+# v6 billing calibration (Round v6 Addendum 2): the OpenAI usage dashboard billed every GPT-6-family model about
+# 6.3-6.5% above the list prices in OPENAI_MODELS and GPT-5.4 exactly at list price (G0 + G0b, per model). The guard
+# counts the billed estimate (recorded list-price cost x factor), plus a margin for abandoned requests whose tokens are
+# billed but never received (the G0b Luna stall: ~127,600 output tokens).
+V6_BILLED_FACTOR = {m: (1.0 if m.startswith("gpt-5.4") else 1.07) for m in OPENAI_MODELS}
+V6_ABANDONED_MARGIN = 1.05
+
+
 def round_spent(rnd):
-    """Running total of every run of this round recorded in any results/*-runs.jsonl."""
+    """Running total of every run of this round recorded in any results/*-runs.jsonl. For v6: the billed estimate
+    (see V6_BILLED_FACTOR) including the preflight requests, times V6_ABANDONED_MARGIN."""
     total = 0.0
     for name in os.listdir(RES):
         if name.endswith("-runs.jsonl"):
@@ -412,7 +428,14 @@ def round_spent(rnd):
                 if line.strip():
                     r = json.loads(line)
                     if round_of(r.get("batch"), r.get("protocol")) == rnd:
-                        total += r.get("cost_usd") or 0
+                        c = r.get("cost_usd") or 0
+                        total += c * V6_BILLED_FACTOR.get(r.get("model"), 1.0) if rnd == "v6" else c
+    if rnd == "v6":
+        for name in os.listdir(RES):
+            if name.startswith("v6-preflight") and name.endswith(".json"):
+                total += sum((p.get("cost_usd") or 0) * V6_BILLED_FACTOR.get(p.get("model"), 1.0)
+                             for p in json.load(open(os.path.join(RES, name))))
+        total *= V6_ABANDONED_MARGIN
     return total
 
 

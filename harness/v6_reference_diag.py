@@ -23,8 +23,7 @@ for label in ("reference", "fixed"):
     for mod in ("metrics", "loader", "report"):
         src = open(f"/hidden/reference/{mod}.py").read()
         if label == "fixed" and mod == "metrics":
-            src2 = src.replace("cur = cur + 1 if c else 0", "cur = cur + 1 if c > 0 else 0")
-            assert src2 != src; src = src2
+            src = src.replace("cur = cur + 1 if c else 0", "cur = cur + 1 if c > 0 else 0")  # no-op once fixed
         open(os.path.join(d, pkg, f"{mod}.py"), "w").write(src)
     p = subprocess.run(["python", "-m", "pytest", "-q", "-p", "no:cacheprovider", "-rf"], cwd=d, capture_output=True, text=True)
     out[label] = {"rc": p.returncode, "failed": re.findall(r"^FAILED (\S+)", p.stdout, re.M)}

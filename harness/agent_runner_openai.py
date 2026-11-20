@@ -26,6 +26,9 @@ MINIMAL_SYSTEM = "You are an AI agent running in a tool-calling harness."  # the
 BASH_OUT_LIMIT = 30000  # characters; the Claude runs never exceeded 8,221, so this cap is not exercised by these tasks
 READ_DEFAULT_LINES = 2000
 SECRET_ENV = ("OPENAI_API_KEY", "ANTHROPIC_API_KEY")
+# Round v6 Addendum 2: per-request output cap. No v6 response before it exceeded 2,477 output tokens; it bounds a runaway
+# (the G0b Luna stall generated ~127,600 billed tokens). A response that hits it ends `incomplete` and is reported.
+MAX_OUTPUT_TOKENS = 32000
 
 TOOLS = [
     {"type": "function", "name": "Read", "description": "Read a file. Returns lines prefixed with their 1-based line "
@@ -235,7 +238,8 @@ def main():
     os.makedirs(f"{H}/out", exist_ok=True)
     model, price = cond["model"], cond["price"]          # price: (input, cached input, output) per million tokens
     instructions = MINIMAL_SYSTEM + (("\n\n" + cond["system_prompt"]) if cond.get("system_prompt") else "")
-    client = OpenAI(max_retries=3, timeout=600)
+    # per request: 180 s, 2 retries -> a stalled request ends inside the 900 s run limit as a recorded API error
+    client = OpenAI(max_retries=2, timeout=180)
     items = [{"role": "user", "content": cond["prompt"]}]
     read_set, turns, totals, cost, max_prompt = set(), 0, {"input_tokens": 0, "cached_tokens": 0, "output_tokens": 0,
                                                          "reasoning_tokens": 0}, 0.0, 0
@@ -249,7 +253,7 @@ def main():
                 terminal, subtype = "max_turns", "error_max_turns"
                 break
             kw = dict(model=model, instructions=instructions, input=items, tools=TOOLS, store=False,
-                      parallel_tool_calls=True)
+                      parallel_tool_calls=True, max_output_tokens=MAX_OUTPUT_TOKENS)
             if cond.get("reasoning"):
                 kw["reasoning"] = cond["reasoning"]
                 kw["include"] = ["reasoning.encrypted_content"]
@@ -299,6 +303,7 @@ def main():
                 results.append((b["id"], text, is_err))
                 items.append({"type": "function_call_output", "call_id": b["id"], "output": text})
             tr.write(json.dumps(tool_results_record(results)) + "\n")
+            tr.flush()
             if cost > cond["max_budget_usd"]:
                 terminal, subtype = "budget", "error_max_budget_usd"
                 break
