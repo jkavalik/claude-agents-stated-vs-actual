@@ -9,7 +9,7 @@ import subprocess
 import sys
 
 RES = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "results")
-MODELS = ["claude-opus-4-6", "claude-sonnet-4-6", "claude-sonnet-5-5", "claude-opus-5-5"]
+MODELS = ["claude-opus-4-6", "claude-sonnet-4-6", "claude-sonnet-5-5", "claude-opus-5-5", "claude-fable-5-2"]
 PROBE = r'''
 import json, os, sys, urllib.request, urllib.error
 out = {}
@@ -34,7 +34,7 @@ if p.returncode:
     sys.exit(p.stderr[-1000:])
 res = json.loads(p.stdout)
 # List prices from the bundled claude-api reference (cached 2026-11-03), $ per million tokens.
-prices = {"claude-opus-4-6": [5.0, 25.0], "claude-sonnet-4-6": [3.0, 15.0], "claude-sonnet-5-5": [2.0, 10.0],
+prices = {"claude-fable-5-2": [8.0, 40.0], "claude-opus-4-6": [5.0, 25.0], "claude-sonnet-4-6": [3.0, 15.0], "claude-sonnet-5-5": [2.0, 10.0],
           "claude-opus-5-5": [4.0, 20.0]}
 for m in res:
     res[m]["list_price_usd_per_mtok_in_out"] = prices.get(m)

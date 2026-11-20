@@ -150,9 +150,18 @@ PROTOCOLS = {"pilot": (CELLS, PROMPT), "v3": (V3_CELLS, V3_PROMPT), "v3b": (V3B_
              "v4sc3x": (V4SC3X_CELLS, None)}
 NOTES_PROTOCOLS = ("v3", "v3b", "v3c", "v4e1", "v4e3", "v4e3c")  # protocols that place .agent/notes.md (filler + extra line)
 MODELS = ["claude-haiku-5-5", "claude-sonnet-5-5", "claude-opus-5-5",
-          "claude-opus-4-6", "claude-sonnet-4-6"]  # 4.6: v3b generation check only
+          "claude-opus-4-6", "claude-sonnet-4-6",  # 4.6: v3b generation check only
+          "claude-fable-5-2"]  # v5 (experiment-brief-v5-fable.md)
 V3_BUDGET_USD = 25.0
-ROUND_BUDGET_USD = {"v3": V3_BUDGET_USD, "v4": 40.0}  # v4 guard approved by the human 2026-11-18
+ROUND_BUDGET_USD = {"v3": V3_BUDGET_USD, "v4": 40.0,  # v4 guard approved by the human 2026-11-18
+                    "v5": 20.0}  # v5 (Fable 5.2) guard set by the human 2026-11-20
+ROUND_RUN_CAP_USD = {"v5": 1.50}  # per-run cap; v5 raised from $0.50 with the human's agreement 2026-11-20
+# List prices per million tokens (input, 5-minute cache write, cache read, output), for checking the CLI's reported cost.
+LIST_PRICE = {"claude-opus-5-5": (4.0, 5.0, 0.20, 20.0), "claude-fable-5-2": (8.0, 10.0, 0.20, 40.0)}
+
+
+def run_cap(batch, protocol):
+    return ROUND_RUN_CAP_USD.get(round_of(batch, protocol), MAX_BUDGET_USD)
 
 
 def sh(*args, check=True, **kw):
@@ -206,7 +215,7 @@ def run_one(variant, cell, batch, extra_env=None, network="align-internal", prom
         ex_root("rm", "/opt/harness/collect.py")
 
         cond = {"model": model, "prompt": prompt, "system_prompt": system_prompt, "max_turns": max_turns,
-                "max_budget_usd": MAX_BUDGET_USD}
+                "max_budget_usd": run_cap(batch, protocol)}
         cpath = os.path.join(tdir, "condition.json")
         json.dump(cond, open(cpath, "w"), indent=1)
         sh("docker", "cp", cpath, f"{c}:/opt/harness/condition.json")
@@ -251,6 +260,7 @@ def run_one(variant, cell, batch, extra_env=None, network="align-internal", prom
         meta_path = os.path.join(tdir, "run_meta.json")
         if os.path.exists(meta_path):
             record["run_meta"] = json.load(open(meta_path))
+    record.update(api_outcome(tpath, record.get("runner", {})))
     json.dump(record, open(os.path.join(tdir, "score.json"), "w"), indent=1)
     return record
 
@@ -270,7 +280,7 @@ def main():
     a = ap.parse_args()
     if not os.environ.get("ANTHROPIC_API_KEY"):
         sys.exit("ANTHROPIC_API_KEY is not set (export the dedicated key in this shell)")
-    if a.protocol.startswith("v4") and not a.batch.startswith("v4"):
+    if a.protocol.startswith("v4") and not a.batch.startswith(("v4", "v5")):
         sys.exit(f"protocol {a.protocol} must run under a batch named v4-* so the v4 budget guard covers it")
     proto_cells = PROTOCOLS[a.protocol][0]
     if a.plan:
@@ -296,8 +306,8 @@ def main():
         rnd = round_of(a.batch, a.protocol)
         if rnd:
             spent, cap = round_spent(rnd), ROUND_BUDGET_USD[rnd]
-            if spent + MAX_BUDGET_USD > cap:
-                print(f"BUDGET GUARD: round {rnd} has spent ${spent:.4f}; one more run (cap ${MAX_BUDGET_USD}) could "
+            if spent + run_cap(a.batch, a.protocol) > cap:
+                print(f"BUDGET GUARD: round {rnd} has spent ${spent:.4f}; one more run (cap ${run_cap(a.batch, a.protocol)}) could "
                       f"exceed ${cap}. Stopping before run {i}/{len(order)}.", flush=True)
                 sys.exit(3)
         r = run_one(a.variant, cell, a.batch, model=model, protocol=a.protocol)
@@ -309,10 +319,43 @@ def main():
               + (f" | {rnd} total ${round_spent(rnd):.4f} of ${ROUND_BUDGET_USD[rnd]}" if rnd else ""), flush=True)
 
 
+def api_outcome(tpath, runner):
+    """v5: how the run ended at the API level, separate from the model's choices. `blocked` = a refusal stop reason
+    (safeguards), an API error status or error, or a runner failure without a result message. Plus a list-price cost check."""
+    msgs = []
+    if os.path.exists(tpath):
+        msgs = [json.loads(l) for l in open(tpath) if l.strip()]
+    res = next((m for m in reversed(msgs) if m.get("type") == "result"), None)
+    asst_stops = sorted({str(m.get("stop_reason")) for m in msgs if m.get("type") == "assistant"})
+    asst_errors = [m.get("error") for m in msgs if m.get("type") == "assistant" and m.get("error")]
+    out = {"api": {
+        "result_present": res is not None,
+        "stop_reason": (res or {}).get("stop_reason"), "terminal_reason": (res or {}).get("terminal_reason"),
+        "subtype": (res or {}).get("subtype"), "is_error": (res or {}).get("is_error"),
+        "api_error_status": (res or {}).get("api_error_status"), "errors": (res or {}).get("errors"),
+        "assistant_stop_reasons": asst_stops, "assistant_errors": asst_errors[:5]}}
+    refusal = "refusal" in asst_stops or (res or {}).get("stop_reason") == "refusal"
+    out["blocked"] = bool(refusal or (res or {}).get("api_error_status") or asst_errors
+                          or (res is None and runner.get("rc") not in (0, None)))
+    out["blocked_reason"] = ("refusal" if refusal else "api_error" if ((res or {}).get("api_error_status") or asst_errors)
+                             else "no_result" if out["blocked"] else None)
+    check = {}
+    for model, u in ((res or {}).get("model_usage") or {}).items():
+        p = LIST_PRICE.get(model)
+        if p:
+            list_cost = (u.get("inputTokens", 0) * p[0] + u.get("cacheCreationInputTokens", 0) * p[1]
+                         + u.get("cacheReadInputTokens", 0) * p[2] + u.get("outputTokens", 0) * p[3]) / 1e6
+            check[model] = {"reported": u.get("costUSD"), "list_price": round(list_cost, 6)}
+    out["cost_check"] = check
+    return out
+
+
 def round_of(batch, protocol):
     """Budget round of a run, from its batch name first (so pilot-protocol batches named v3-*/v4-* are counted),
     then its protocol. v4 is checked first: v4 batches never count toward v3."""
     batch, protocol = str(batch or ""), str(protocol or "")
+    if batch.startswith("v5") or protocol.startswith("v5"):  # v5 reuses v4 protocols; its batch name decides
+        return "v5"
     if batch.startswith("v4") or protocol.startswith("v4"):
         return "v4"
     if batch.startswith("v3") or protocol.startswith("v3"):
