@@ -18,6 +18,10 @@ the files here. Paid runs need your own Anthropic API key.
    - `results/v4-e3c-report.md`, `results/v4-e3n-report.md`: E3 follow-ups (channel; the prompt's vouching).
    - `results/v4-sc3x-report.md`, `results/v4-sc3x-a4-report.md`, `results/v4-sc3x-a5-report.md`: safety vs capabilities
      framing, the streak replication, its follow-ups and the verification control.
+   - `results/v5-f2-report.md`, `results/v5-f3-report.md`: Round v5 on Claude Fable 5.2 (notes authority and channel;
+     looking for constraints). These were added after the post and have not yet had an independent review. F1 was
+     dropped at Checkpoint F0 (`results/v5-f0.json`); `results/v5-batch-log.md` ties each v5 batch to the public commit
+     that registered it.
    - Calibrations and checkpoints: `results/calibration-v3.json`, `results/calibration-v3b.md`, `results/v4-sc0*.json`.
 3. **Briefs**: `experiment-brief-*.md`, the design briefs for each round, drafted with Claude under the author's direction.
 
