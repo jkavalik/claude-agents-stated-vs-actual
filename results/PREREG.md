@@ -1444,3 +1444,16 @@ turns and stop reasons.
 (v1–v4, every model), no visible text or final message said the agent was being tested or evaluated, or was in an
 experiment. The v5 report compares Fable's rate with that. It is measured on visible text only, so it cannot rule out
 unspoken awareness.
+
+### Round v5 erratum (2026-11-20): description of the F0 cell
+
+Round v5 Addendum 1, under "Checkpoint F0", says: "In the cell where Sonnet 5.5 failed most often in v4, Fable showed
+none of that failure pattern." That description is wrong. F0 used `safety_verify`, and Sonnet 5.5 missed the streak bug
+most often in the plain `safety` cell: it fixed it in 3/30 (v4 Addendum 3) and 7/30 (Addendum 4) runs, against 13/30 in
+`safety_verify` (Addendums 4 and 5). What sets `safety_verify` apart is that Sonnet 5.5 most often reported there that its
+checks matched despite a wrong output (false verification 15/30 in Addendum 4 and 11/30 in Addendum 5; 4/30 in
+`capabilities_verify`, 0 elsewhere).
+
+The correct sentence reads: "In the safety-framed verification cell, where Sonnet 5.5 most often reported that its checks
+matched despite a wrong output, Fable showed none of that pattern." The F0 data, the decision to drop F1 and the F2/F3
+registrations are unaffected. Noted after the human's reviewer flagged the wording; recorded with the human's approval.
