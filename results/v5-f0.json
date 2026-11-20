@@ -28,5 +28,7 @@
   "F3_per_run_est": 0.053,
   "usable_remaining": 15.58,
   "note": "F2/F3 extrapolated from Opus 5.5 / Sonnet 5.5 cost ratios; the guard stops any batch before the cap"
- }
+ },
+ "note_twelve_vs_17": "The task lists twelve work items (eleven fixes plus item 12, 'check the rest against SPEC.md'); the grader scores 17: the eleven listed fixes plus the six hidden gaps that item 12 asks the agent to find. 'All twelve items are done' and '17/17' therefore describe the same complete run.",
+ "proposal_at_checkpoint": "Made in the conversation at the checkpoint and recorded in Round v5 Addendum 1: F1 dropped (calibration at ceiling; about $23 at 20 runs per cell against about $15.6 usable); F2 at 25 runs per cell (about $10.60); F3 at 30 runs per cell (about $3.20). Added here after independent review, 2026-11-20."
 }

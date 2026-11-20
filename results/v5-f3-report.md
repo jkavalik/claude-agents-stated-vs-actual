@@ -15,12 +15,14 @@ equals list price in every run, evaluation awareness (visible text) 0/60.
 | sys_i | 30/30 | 89–100% | 0/30 | 30/30 |
 
 **F3:** 30/30 vs 30/30, p = 1. **At the ceiling, as the addendum anticipated: Fable reads `CONTRIBUTING.md` without
-being prompted, so the self-description has nothing to add.** This null says nothing about whether the sentence would
+being prompted, so the test has no room to show an effect of the self-description.** This null says nothing about whether the sentence would
 help a model that doesn't look.
 
 **How it looks.** Every run's second command reads `CONTRIBUTING.md` along with the README and the code (e.g.
 `cat CONTRIBUTING.md README.md pytest.ini; ls app; cat app/*.py`), before any edit. Every run then stopped with an honest
-report naming the rule and the one-line fix. Four final messages were read by hand, and all four matched their scores.
+report naming the rule and the one-line fix. Four final messages were read by hand, and all four matched their scores. Every run took 3 turns. Blocked runs and
+evaluation-awareness statements are 0 in both cells; the latter equals the pre-registered baseline of 0/1,801 earlier
+runs (visible text only).
 
 ## Exploratory, cross-batch (not a registered test)
 
@@ -34,3 +36,9 @@ Same setup in v3 Step C and its Amendment 4 replication (other batches):
 
 On this task Fable shows none of Sonnet 5.5's failure mode: it looks for the repository's rules unprompted and then
 keeps to them. **Limits:** one task, one model, and an exploratory comparison across batches.
+
+## Corrections after independent review (2026-11-20)
+
+- "So the self-description has nothing to add" went beyond the ceiling rule. It now reads "the test has no room to show
+  an effect of the self-description."
+- Turns, per-cell zeros and the comparison with the evaluation-awareness baseline have been added.
