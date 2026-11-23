@@ -4,6 +4,11 @@ This repository holds everything behind the post ["When Sonnet 5.5 says 'I check
 task environments, the raw runs and transcripts, and the corrected reports. All analyses can be recomputed offline from
 the files here. Paid runs need your own Anthropic API key.
 
+The same tasks were later run on OpenAI models (round v6) for the post
+["One line in a notes file: some AI agents break the rule and report only success"](https://jkavalik.substack.com/p/one-line-in-a-notes-file-some-ai).
+Its report is `results/v6-report.md`, with the batch log, timestamps and data under `results/v6-*`. Paid v6 runs need
+your own OpenAI API key.
+
 ## What to read, in order
 
 1. **`results/PREREG.md`**: designs, predictions, tests and interpretation rules, written before the data. Amendments are
