@@ -257,8 +257,14 @@ reproduced. The findings below were each checked against the files before changi
   | gpt-6.1-sol | $0.12 | none | not ours |
 
   Our records include the preflights and the relabel.
-  - The GPT-6 family is again billed somewhat above list, and GPT-5.4 at list, as in the Addendum 2 reconciliation.
-  - gpt-6.2-astra is below our records, most likely because G1x (run the same day) was not yet fully posted.
+  - Per model, GPT-6-astra, Sol and Terra show 4–6% above list and GPT-5.4 is at list, as on Nov 20.
   - Luna's excess ($0.19) includes the abandoned G0b request (about $0.06); the rest is unexplained.
-  - gpt-6.1-sol was not used by any v6 batch; the dashboard covers the whole organization.
-  - Once posting completes, actual v6 spend should be about $60, below the guard's conservative estimate of $64.60.
+  - **By API key, the `alignment-testing` key totals $57.83, against $57.84 in our list-price records.** The $0.12 of
+    gpt-6.1-sol is a different key (`codereview`) and not part of v6.
+  - The per-model differences (gpt-6-astra +$1.96, gpt-6.2-astra −$2.56, the rest +$0.58) cancel almost exactly in the
+    total. Two explanations fit, and these data can't separate them:
+    - G1x (run the same day) was not yet fully posted, in which case the total will still rise to about $60;
+    - or the dashboard attributes some spend differently across models.
+  - So, as of this figure, billed spend for v6 equals list price in total. The ~6.4% GPT-6-family premium seen on
+    Nov 20 (Addendum 2) is not confirmed for the round as a whole.
+  - Either way it is below the guard's conservative estimate of $64.60.
