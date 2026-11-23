@@ -7,5 +7,5 @@
 - `key-check.json`: Q-id -> R-id, with the sampled groups.
 - The cross-vendor relabel of `check.txt` by gpt-6.2-sol is in `../v6-xlabel/labels-gpt-6.2-sol.jsonl`.
 
-The folder `results/v6-g2-handclass/` (local only, not part of this record) is a different, earlier label set that the
-v6 report does not use.
+An earlier, abandoned labelling of the same runs is published as `../v6-g2-handclass-superseded/`, with its origin
+and its agreement with this set (498/498, 497/498, 498/498).

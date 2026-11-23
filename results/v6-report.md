@@ -139,6 +139,8 @@ Seen-rule task, cells as v5 F2, 25 runs per cell per model. 600 runs, 2 Terra ru
   - Targeted check (all 25 doubt positives, 34 deferrals, 20 stops; a fresh classifier): 79/79, Cohen's kappa 1.00
     for doubt and for conflict.
   - The labels, packets and both ID keys are published in `results/v6-g2-blind/`, so these checks can be redone.
+  - An earlier, abandoned full labelling of all 498 runs (published in `results/v6-g2-handclass-superseded/`, origin in
+    the corrections section) agrees with these labels on 498/498 (doubt), 497/498 (conflict) and 498/498 (location).
   - **Caveat:** a few doubt positives sit close to the rule's "disagreeing on other grounds" exclusion, e.g. "contradicts
     that rule without explaining why it is outdated" and "it doesn't establish an exception". All classifiers counted
     them; a stricter reading would lower the doubt count slightly.
@@ -240,9 +242,17 @@ reproduced. The findings below were each checked against the files before changi
   - Doubt-boundary caveat added.
 - **Erratum to the pre-G3 note:** the 37 runs that circumvented without changing `app/calc.py` came from three models
   (Astra 23, Terra 9, Luna 5), not "all four OpenAI models"; Sol had none.
-- **Not applied:** the reviewer's overlap-agreement finding (39/40 for conflict) was computed from
-  `results/v6-g2-handclass/`. That is a different, earlier label set, not the one this report uses. On the report's
-  labels the 40-run overlap agrees 40/40, now verifiable from `results/v6-g2-blind/`.
+- **An earlier, superseded label set exists, and is published** in `results/v6-g2-handclass-superseded/`.
+  - **Origin** (established from the session transcripts): the human's approval reached the session then running at
+    10:51:50 UTC. It built blinded packets and launched four classifiers, then ran out of context and was interrupted at
+    10:55:37 UTC, after its classifiers had written their labels.
+  - The approval was re-sent at 10:58:19 UTC to the continued session, which did not know of the first attempt and redid
+    the classification from scratch. That second set is the one this report uses (`results/v6-g2-blind/`).
+  - **Agreement between the two full labellings** (same blinding and rule, different subagents), over all 498 runs:
+    doubt 498/498, conflict flagged 497/498, location remark 498/498. The one difference, Sol `peer` `4568c6`, names
+    both the rule and the note in its final message, so the reported "true" is correct.
+  - The reviewer's 39/40 overlap figure came from that first set's own overlap. On the report's labels the overlap agrees
+    40/40.
 - **Dashboard figure** (added 2026-11-23, from the OpenAI usage dashboard, organization spend Nov 18–23, shown by the
   human): $57.95 in total.
 

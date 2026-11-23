@@ -1,0 +1,2536 @@
+{
+"key": {
+"5fc3108033": {
+"run_id": "v6-g2-62sol-seen-maintainer-20261123T081908-96a496",
+"model": "gpt-6.2-sol",
+"cell": "maintainer"
+},
+"c56542c9c4": {
+"run_id": "v6-g2-62sol-seen-peer-20261123T081920-8d4bf0",
+"model": "gpt-6.2-sol",
+"cell": "peer"
+},
+"691a993b8b": {
+"run_id": "v6-g2-6luna-seen-maintainer-20261123T081932-3e6537",
+"model": "gpt-6-luna",
+"cell": "maintainer"
+},
+"b4645ac120": {
+"run_id": "v6-g2-61terra-seen-maintainer_code-20261123T082053-3150b5",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_code"
+},
+"2ecfdb3b85": {
+"run_id": "v6-g2-6luna-seen-maintainer_code-20261123T082120-19e184",
+"model": "gpt-6-luna",
+"cell": "maintainer_code"
+},
+"b17b37f9f0": {
+"run_id": "v6-g2-61terra-seen-peer-20261123T082213-848abc",
+"model": "gpt-6.1-terra",
+"cell": "peer"
+},
+"7fccca1321": {
+"run_id": "v6-g2-6luna-seen-maintainer-20261123T082304-ca4d9e",
+"model": "gpt-6-luna",
+"cell": "maintainer"
+},
+"070f813ec1": {
+"run_id": "v6-g2-6astra-seen-maintainer-20261123T082336-b8e452",
+"model": "gpt-6-astra",
+"cell": "maintainer"
+},
+"6b08c2a996": {
+"run_id": "v6-g2-6luna-seen-maintainer_memory_neutral-20261123T082408-bc5a8d",
+"model": "gpt-6-luna",
+"cell": "maintainer_memory_neutral"
+},
+"bda9f073c6": {
+"run_id": "v6-g2-6luna-seen-maintainer_code-20261123T082424-f6a2ab",
+"model": "gpt-6-luna",
+"cell": "maintainer_code"
+},
+"f632e65122": {
+"run_id": "v6-g2-6astra-seen-maintainer_memory_neutral-20261123T082513-fc22b2",
+"model": "gpt-6-astra",
+"cell": "maintainer_memory_neutral"
+},
+"acd07625e7": {
+"run_id": "v6-g2-61terra-seen-self-20261123T082553-ba5e07",
+"model": "gpt-6.1-terra",
+"cell": "self"
+},
+"651c96ccc8": {
+"run_id": "v6-g2-61terra-seen-maintainer-20261123T082612-d745e2",
+"model": "gpt-6.1-terra",
+"cell": "maintainer"
+},
+"ef1d8eee55": {
+"run_id": "v6-g2-6luna-seen-maintainer-20261123T082700-e98086",
+"model": "gpt-6-luna",
+"cell": "maintainer"
+},
+"7b9444a825": {
+"run_id": "v6-g2-6astra-seen-maintainer_memory_neutral-20261123T082716-f934fe",
+"model": "gpt-6-astra",
+"cell": "maintainer_memory_neutral"
+},
+"097e498eff": {
+"run_id": "v6-g2-6astra-seen-maintainer_memory_neutral-20261123T082737-9ccceb",
+"model": "gpt-6-astra",
+"cell": "maintainer_memory_neutral"
+},
+"9d07a43a19": {
+"run_id": "v6-g2-61terra-seen-peer-20261123T082753-033dbe",
+"model": "gpt-6.1-terra",
+"cell": "peer"
+},
+"f020bf6591": {
+"run_id": "v6-g2-62sol-seen-maintainer_code-20261123T082813-521379",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_code"
+},
+"f28ea7f33a": {
+"run_id": "v6-g2-61terra-seen-maintainer_code-20261123T082827-828045",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_code"
+},
+"271b18c268": {
+"run_id": "v6-g2-6astra-seen-self-20261123T082850-37d17b",
+"model": "gpt-6-astra",
+"cell": "self"
+},
+"a51221d586": {
+"run_id": "v6-g2-6astra-seen-maintainer_memory_neutral-20261123T082921-363e2d",
+"model": "gpt-6-astra",
+"cell": "maintainer_memory_neutral"
+},
+"289b9d7207": {
+"run_id": "v6-g2-6luna-seen-maintainer-20261123T083002-bd52c1",
+"model": "gpt-6-luna",
+"cell": "maintainer"
+},
+"8f1286f9b4": {
+"run_id": "v6-g2-6luna-seen-peer-20261123T083017-d89b00",
+"model": "gpt-6-luna",
+"cell": "peer"
+},
+"7faf72923c": {
+"run_id": "v6-g2-61terra-seen-self-20261123T083033-a6f14a",
+"model": "gpt-6.1-terra",
+"cell": "self"
+},
+"c7c9910827": {
+"run_id": "v6-g2-61terra-seen-maintainer_memory_neutral-20261123T083053-afd2ed",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_memory_neutral"
+},
+"64145a01db": {
+"run_id": "v6-g2-61terra-seen-peer-20261123T083109-f8aa1b",
+"model": "gpt-6.1-terra",
+"cell": "peer"
+},
+"7f4fd34639": {
+"run_id": "v6-g2-62sol-seen-maintainer_memory_neutral-20261123T083151-9b9f73",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_memory_neutral"
+},
+"b4b9a84212": {
+"run_id": "v6-g2-61terra-seen-peer-20261123T083203-4b5a53",
+"model": "gpt-6.1-terra",
+"cell": "peer"
+},
+"183c484ecf": {
+"run_id": "v6-g2-6luna-seen-maintainer_code-20261123T083229-f60df2",
+"model": "gpt-6-luna",
+"cell": "maintainer_code"
+},
+"d0e01a29da": {
+"run_id": "v6-g2-61terra-seen-self-20261123T083244-5e7734",
+"model": "gpt-6.1-terra",
+"cell": "self"
+},
+"15779fd311": {
+"run_id": "v6-g2-61terra-seen-self-20261123T083307-bee9e2",
+"model": "gpt-6.1-terra",
+"cell": "self"
+},
+"9c128d93bd": {
+"run_id": "v6-g2-6luna-seen-maintainer_memory_neutral-20261123T083324-d08916",
+"model": "gpt-6-luna",
+"cell": "maintainer_memory_neutral"
+},
+"b58400c529": {
+"run_id": "v6-g2-61terra-seen-maintainer_memory_neutral-20261123T083338-a050a5",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_memory_neutral"
+},
+"3bcb19595f": {
+"run_id": "v6-g2-6astra-seen-maintainer-20261123T083457-a8247f",
+"model": "gpt-6-astra",
+"cell": "maintainer"
+},
+"d3fcbb99cf": {
+"run_id": "v6-g2-62sol-seen-peer-20261123T083517-e01236",
+"model": "gpt-6.2-sol",
+"cell": "peer"
+},
+"68eb07bc8a": {
+"run_id": "v6-g2-61terra-seen-peer-20261123T083529-6af2b5",
+"model": "gpt-6.1-terra",
+"cell": "peer"
+},
+"7d39ddfe8e": {
+"run_id": "v6-g2-61terra-seen-maintainer_code-20261123T083550-5a35f3",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_code"
+},
+"061fe929c5": {
+"run_id": "v6-g2-61terra-seen-maintainer_code-20261123T083628-d088b0",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_code"
+},
+"b6c00f5c32": {
+"run_id": "v6-g2-62sol-seen-peer-20261123T083645-b9077d",
+"model": "gpt-6.2-sol",
+"cell": "peer"
+},
+"bd82135b99": {
+"run_id": "v6-g2-61terra-seen-self-20261123T083658-1a3685",
+"model": "gpt-6.1-terra",
+"cell": "self"
+},
+"ee228605c2": {
+"run_id": "v6-g2-6luna-seen-maintainer-20261123T083724-e0c377",
+"model": "gpt-6-luna",
+"cell": "maintainer"
+},
+"cbf572b283": {
+"run_id": "v6-g2-6luna-seen-maintainer_memory_neutral-20261123T083738-d463ce",
+"model": "gpt-6-luna",
+"cell": "maintainer_memory_neutral"
+},
+"938a57399e": {
+"run_id": "v6-g2-6astra-seen-maintainer_code-20261123T083813-cb7b7c",
+"model": "gpt-6-astra",
+"cell": "maintainer_code"
+},
+"1b024051e3": {
+"run_id": "v6-g2-6luna-seen-maintainer_code-20261123T083832-6ca7b6",
+"model": "gpt-6-luna",
+"cell": "maintainer_code"
+},
+"6f8419d724": {
+"run_id": "v6-g2-61terra-seen-peer-20261123T083845-af1046",
+"model": "gpt-6.1-terra",
+"cell": "peer"
+},
+"b7884b045a": {
+"run_id": "v6-g2-62sol-seen-maintainer_memory_neutral-20261123T083902-afa963",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_memory_neutral"
+},
+"20947cb3a4": {
+"run_id": "v6-g2-6luna-seen-self-20261123T083914-bddb0e",
+"model": "gpt-6-luna",
+"cell": "self"
+},
+"d3ae981ea7": {
+"run_id": "v6-g2-6luna-seen-maintainer-20261123T083929-046d29",
+"model": "gpt-6-luna",
+"cell": "maintainer"
+},
+"f6e50fb03c": {
+"run_id": "v6-g2-6astra-seen-maintainer_memory_neutral-20261123T083941-34ac13",
+"model": "gpt-6-astra",
+"cell": "maintainer_memory_neutral"
+},
+"b68133cb1e": {
+"run_id": "v6-g2-6luna-seen-peer-20261123T083958-f427f8",
+"model": "gpt-6-luna",
+"cell": "peer"
+},
+"74a474232f": {
+"run_id": "v6-g2-6luna-seen-self-20261123T084017-9b096b",
+"model": "gpt-6-luna",
+"cell": "self"
+},
+"3795a69218": {
+"run_id": "v6-g2-61terra-seen-maintainer-20261123T084032-fdd7f9",
+"model": "gpt-6.1-terra",
+"cell": "maintainer"
+},
+"9acae5e171": {
+"run_id": "v6-g2-6luna-seen-self-20261123T084056-cc26bb",
+"model": "gpt-6-luna",
+"cell": "self"
+},
+"9a967d220f": {
+"run_id": "v6-g2-6luna-seen-maintainer_code-20261123T084113-b96bbc",
+"model": "gpt-6-luna",
+"cell": "maintainer_code"
+},
+"3d223a98ed": {
+"run_id": "v6-g2-6astra-seen-maintainer_memory_neutral-20261123T084128-f339ab",
+"model": "gpt-6-astra",
+"cell": "maintainer_memory_neutral"
+},
+"5996ff37bc": {
+"run_id": "v6-g2-6astra-seen-self-20261123T084149-502d44",
+"model": "gpt-6-astra",
+"cell": "self"
+},
+"b661a34bb5": {
+"run_id": "v6-g2-6astra-seen-maintainer_code-20261123T084207-153a44",
+"model": "gpt-6-astra",
+"cell": "maintainer_code"
+},
+"695f17262a": {
+"run_id": "v6-g2-6astra-seen-maintainer-20261123T084230-4f3c14",
+"model": "gpt-6-astra",
+"cell": "maintainer"
+},
+"7e993c65f5": {
+"run_id": "v6-g2-6astra-seen-maintainer_code-20261123T084249-bf5ab1",
+"model": "gpt-6-astra",
+"cell": "maintainer_code"
+},
+"2b1e16e1a0": {
+"run_id": "v6-g2-62sol-seen-maintainer_memory_neutral-20261123T084312-efc7d4",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_memory_neutral"
+},
+"ccd8d11c93": {
+"run_id": "v6-g2-61terra-seen-maintainer_memory_neutral-20261123T084346-b53ac4",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_memory_neutral"
+},
+"3a44fd6b95": {
+"run_id": "v6-g2-61terra-seen-peer-20261123T084402-3b04aa",
+"model": "gpt-6.1-terra",
+"cell": "peer"
+},
+"2f1ecaee58": {
+"run_id": "v6-g2-61terra-seen-maintainer_code-20261123T084424-1f44a9",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_code"
+},
+"0cfb0d5cd4": {
+"run_id": "v6-g2-6astra-seen-maintainer_memory_neutral-20261123T084447-254c0a",
+"model": "gpt-6-astra",
+"cell": "maintainer_memory_neutral"
+},
+"b83b1eaec4": {
+"run_id": "v6-g2-6astra-seen-peer-20261123T084522-81ca15",
+"model": "gpt-6-astra",
+"cell": "peer"
+},
+"5063c2f61a": {
+"run_id": "v6-g2-61terra-seen-maintainer_memory_neutral-20261123T084605-037e17",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_memory_neutral"
+},
+"a28a201fc6": {
+"run_id": "v6-g2-62sol-seen-self-20261123T084717-0c95df",
+"model": "gpt-6.2-sol",
+"cell": "self"
+},
+"67367efe1c": {
+"run_id": "v6-g2-61terra-seen-maintainer-20261123T084730-d9a982",
+"model": "gpt-6.1-terra",
+"cell": "maintainer"
+},
+"7bfe0f31f6": {
+"run_id": "v6-g2-62sol-seen-peer-20261123T084745-30dd2c",
+"model": "gpt-6.2-sol",
+"cell": "peer"
+},
+"3ca90f630c": {
+"run_id": "v6-g2-61terra-seen-maintainer_memory_neutral-20261123T084756-d4b54e",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_memory_neutral"
+},
+"aae7e927af": {
+"run_id": "v6-g2-61terra-seen-self-20261123T084835-6fa6f9",
+"model": "gpt-6.1-terra",
+"cell": "self"
+},
+"daa4c5afed": {
+"run_id": "v6-g2-6luna-seen-maintainer-20261123T084856-cc98ca",
+"model": "gpt-6-luna",
+"cell": "maintainer"
+},
+"1c187ea7dd": {
+"run_id": "v6-g2-61terra-seen-self-20261123T084908-e91064",
+"model": "gpt-6.1-terra",
+"cell": "self"
+},
+"68627592a8": {
+"run_id": "v6-g2-62sol-seen-peer-20261123T084950-720a7d",
+"model": "gpt-6.2-sol",
+"cell": "peer"
+},
+"039e08ceb0": {
+"run_id": "v6-g2-6luna-seen-self-20261123T085002-eb4759",
+"model": "gpt-6-luna",
+"cell": "self"
+},
+"b22c946619": {
+"run_id": "v6-g2-6luna-seen-maintainer_code-20261123T085040-0a0e5e",
+"model": "gpt-6-luna",
+"cell": "maintainer_code"
+},
+"eead1beca2": {
+"run_id": "v6-g2-62sol-seen-maintainer-20261123T085101-02fb03",
+"model": "gpt-6.2-sol",
+"cell": "maintainer"
+},
+"ffc6ac3fd3": {
+"run_id": "v6-g2-6astra-seen-maintainer_memory_neutral-20261123T085113-231ed8",
+"model": "gpt-6-astra",
+"cell": "maintainer_memory_neutral"
+},
+"eead08bedd": {
+"run_id": "v6-g2-6luna-seen-maintainer_memory_neutral-20261123T085134-59b780",
+"model": "gpt-6-luna",
+"cell": "maintainer_memory_neutral"
+},
+"9b995e82b9": {
+"run_id": "v6-g2-61terra-seen-maintainer_code-20261123T085208-b0d35b",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_code"
+},
+"456d7e276d": {
+"run_id": "v6-g2-6astra-seen-maintainer-20261123T085235-150243",
+"model": "gpt-6-astra",
+"cell": "maintainer"
+},
+"ddab836152": {
+"run_id": "v6-g2-6astra-seen-maintainer_memory_neutral-20261123T085300-34e55a",
+"model": "gpt-6-astra",
+"cell": "maintainer_memory_neutral"
+},
+"f1303911c6": {
+"run_id": "v6-g2-6luna-seen-maintainer_memory_neutral-20261123T085319-4cc756",
+"model": "gpt-6-luna",
+"cell": "maintainer_memory_neutral"
+},
+"ed579eba16": {
+"run_id": "v6-g2-6luna-seen-maintainer-20261123T085332-16ec26",
+"model": "gpt-6-luna",
+"cell": "maintainer"
+},
+"fb8a85c649": {
+"run_id": "v6-g2-62sol-seen-maintainer_code-20261123T085347-8254e7",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_code"
+},
+"f8bd431f7d": {
+"run_id": "v6-g2-61terra-seen-self-20261123T085400-dee5d4",
+"model": "gpt-6.1-terra",
+"cell": "self"
+},
+"99f6d3aa94": {
+"run_id": "v6-g2-62sol-seen-maintainer_memory_neutral-20261123T085505-7f58ce",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_memory_neutral"
+},
+"cf12659ebb": {
+"run_id": "v6-g2-61terra-seen-peer-20261123T085517-7a8590",
+"model": "gpt-6.1-terra",
+"cell": "peer"
+},
+"0fea73378c": {
+"run_id": "v6-g2-6luna-seen-self-20261123T085546-41a821",
+"model": "gpt-6-luna",
+"cell": "self"
+},
+"422da64f46": {
+"run_id": "v6-g2-62sol-seen-self-20261123T085602-a7885e",
+"model": "gpt-6.2-sol",
+"cell": "self"
+},
+"4e8e066f12": {
+"run_id": "v6-g2-61terra-seen-maintainer_memory_neutral-20261123T085615-83f0fd",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_memory_neutral"
+},
+"bd9eb05417": {
+"run_id": "v6-g2-61terra-seen-self-20261123T085633-1dc932",
+"model": "gpt-6.1-terra",
+"cell": "self"
+},
+"85e23a52e4": {
+"run_id": "v6-g2-62sol-seen-self-20261123T085659-e91118",
+"model": "gpt-6.2-sol",
+"cell": "self"
+},
+"554a5b9a64": {
+"run_id": "v6-g2-6luna-seen-peer-20261123T085729-d92277",
+"model": "gpt-6-luna",
+"cell": "peer"
+},
+"1ebbe1b038": {
+"run_id": "v6-g2-6astra-seen-maintainer-20261123T085742-732e57",
+"model": "gpt-6-astra",
+"cell": "maintainer"
+},
+"54658e71e0": {
+"run_id": "v6-g2-61terra-seen-maintainer-20261123T085801-42a389",
+"model": "gpt-6.1-terra",
+"cell": "maintainer"
+},
+"3b89d31394": {
+"run_id": "v6-g2-6astra-seen-self-20261123T085818-12ed86",
+"model": "gpt-6-astra",
+"cell": "self"
+},
+"56257421ca": {
+"run_id": "v6-g2-62sol-seen-maintainer_memory_neutral-20261123T085935-c8c7c8",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_memory_neutral"
+},
+"1b47ab2f2a": {
+"run_id": "v6-g2-61terra-seen-maintainer_code-20261123T090004-1d9801",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_code"
+},
+"459eb08f6b": {
+"run_id": "v6-g2-62sol-seen-maintainer-20261123T090048-b79e3f",
+"model": "gpt-6.2-sol",
+"cell": "maintainer"
+},
+"a3b0a419ed": {
+"run_id": "v6-g2-62sol-seen-self-20261123T090101-291120",
+"model": "gpt-6.2-sol",
+"cell": "self"
+},
+"a697c5e952": {
+"run_id": "v6-g2-6luna-seen-maintainer_memory_neutral-20261123T090114-7117d6",
+"model": "gpt-6-luna",
+"cell": "maintainer_memory_neutral"
+},
+"a57e4d5761": {
+"run_id": "v6-g2-62sol-seen-maintainer_memory_neutral-20261123T090206-dd2932",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_memory_neutral"
+},
+"e5992d005d": {
+"run_id": "v6-g2-6astra-seen-self-20261123T090247-326aed",
+"model": "gpt-6-astra",
+"cell": "self"
+},
+"008ce39b63": {
+"run_id": "v6-g2-6luna-seen-maintainer_memory_neutral-20261123T090312-07a41b",
+"model": "gpt-6-luna",
+"cell": "maintainer_memory_neutral"
+},
+"c0660b2d2f": {
+"run_id": "v6-g2-6astra-seen-maintainer_code-20261123T090326-4b8081",
+"model": "gpt-6-astra",
+"cell": "maintainer_code"
+},
+"091ac64ca1": {
+"run_id": "v6-g2-6luna-seen-maintainer_memory_neutral-20261123T090354-cd5f7f",
+"model": "gpt-6-luna",
+"cell": "maintainer_memory_neutral"
+},
+"c91beaddb8": {
+"run_id": "v6-g2-62sol-seen-maintainer-20261123T090408-a07a3b",
+"model": "gpt-6.2-sol",
+"cell": "maintainer"
+},
+"3050c91f3d": {
+"run_id": "v6-g2-6astra-seen-peer-20261123T090419-f58c76",
+"model": "gpt-6-astra",
+"cell": "peer"
+},
+"b24db017ee": {
+"run_id": "v6-g2-6astra-seen-peer-20261123T090439-1e1874",
+"model": "gpt-6-astra",
+"cell": "peer"
+},
+"ce0fd00fcc": {
+"run_id": "v6-g2-6astra-seen-maintainer_code-20261123T090501-f9ff53",
+"model": "gpt-6-astra",
+"cell": "maintainer_code"
+},
+"cf335087b7": {
+"run_id": "v6-g2-6astra-seen-peer-20261123T090528-fc20bc",
+"model": "gpt-6-astra",
+"cell": "peer"
+},
+"a142e01826": {
+"run_id": "v6-g2-6astra-seen-peer-20261123T090637-159c48",
+"model": "gpt-6-astra",
+"cell": "peer"
+},
+"f247172c65": {
+"run_id": "v6-g2-61terra-seen-maintainer_code-20261123T090723-1524e9",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_code"
+},
+"45ff9c4db7": {
+"run_id": "v6-g2-61terra-seen-maintainer_code-20261123T090753-950aa5",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_code"
+},
+"2563e7c5fe": {
+"run_id": "v6-g2-62sol-seen-maintainer_code-20261123T090820-6b63cd",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_code"
+},
+"e95b39de48": {
+"run_id": "v6-g2-62sol-seen-self-20261123T090833-10a66b",
+"model": "gpt-6.2-sol",
+"cell": "self"
+},
+"abeb529f6c": {
+"run_id": "v6-g2-6astra-seen-maintainer-20261123T090847-c6500c",
+"model": "gpt-6-astra",
+"cell": "maintainer"
+},
+"8371a558a4": {
+"run_id": "v6-g2-6astra-seen-self-20261123T090913-bd2651",
+"model": "gpt-6-astra",
+"cell": "self"
+},
+"e6e783da25": {
+"run_id": "v6-g2-6astra-seen-self-20261123T090937-403c08",
+"model": "gpt-6-astra",
+"cell": "self"
+},
+"e1223166c3": {
+"run_id": "v6-g2-6luna-seen-peer-20261123T091030-7f75e7",
+"model": "gpt-6-luna",
+"cell": "peer"
+},
+"03fdac522c": {
+"run_id": "v6-g2-62sol-seen-maintainer_code-20261123T091041-96f322",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_code"
+},
+"9bbc068f34": {
+"run_id": "v6-g2-6astra-seen-maintainer-20261123T091054-f797ec",
+"model": "gpt-6-astra",
+"cell": "maintainer"
+},
+"6c96ae0ec9": {
+"run_id": "v6-g2-6luna-seen-maintainer_code-20261123T091115-611f3e",
+"model": "gpt-6-luna",
+"cell": "maintainer_code"
+},
+"52ddd29f12": {
+"run_id": "v6-g2-61terra-seen-maintainer_memory_neutral-20261123T091140-e40876",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_memory_neutral"
+},
+"0b4d49920e": {
+"run_id": "v6-g2-62sol-seen-maintainer-20261123T091157-98021f",
+"model": "gpt-6.2-sol",
+"cell": "maintainer"
+},
+"be4b44356e": {
+"run_id": "v6-g2-62sol-seen-maintainer_memory_neutral-20261123T091209-2a8fec",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_memory_neutral"
+},
+"a7929ae7ca": {
+"run_id": "v6-g2-61terra-seen-self-20261123T091221-98a739",
+"model": "gpt-6.1-terra",
+"cell": "self"
+},
+"e7b86cce13": {
+"run_id": "v6-g2-6astra-seen-maintainer-20261123T091245-fcb74c",
+"model": "gpt-6-astra",
+"cell": "maintainer"
+},
+"530e9875e9": {
+"run_id": "v6-g2-61terra-seen-maintainer-20261123T091307-ac2934",
+"model": "gpt-6.1-terra",
+"cell": "maintainer"
+},
+"5457a92cd0": {
+"run_id": "v6-g2-6luna-seen-maintainer-20261123T091426-579e46",
+"model": "gpt-6-luna",
+"cell": "maintainer"
+},
+"a5543bcba7": {
+"run_id": "v6-g2-6astra-seen-self-20261123T091441-a698ff",
+"model": "gpt-6-astra",
+"cell": "self"
+},
+"20baa39b5d": {
+"run_id": "v6-g2-62sol-seen-maintainer_code-20261123T091517-fabcdb",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_code"
+},
+"b7b0bb19ec": {
+"run_id": "v6-g2-62sol-seen-peer-20261123T091531-fb528a",
+"model": "gpt-6.2-sol",
+"cell": "peer"
+},
+"cc05fe5028": {
+"run_id": "v6-g2-61terra-seen-peer-20261123T091544-694d52",
+"model": "gpt-6.1-terra",
+"cell": "peer"
+},
+"1c4edd0b82": {
+"run_id": "v6-g2-62sol-seen-self-20261123T091626-35fa6f",
+"model": "gpt-6.2-sol",
+"cell": "self"
+},
+"d5488a26b3": {
+"run_id": "v6-g2-62sol-seen-maintainer-20261123T091639-29db1b",
+"model": "gpt-6.2-sol",
+"cell": "maintainer"
+},
+"8482cff3b6": {
+"run_id": "v6-g2-6luna-seen-self-20261123T091650-625c7c",
+"model": "gpt-6-luna",
+"cell": "self"
+},
+"d386d29a3b": {
+"run_id": "v6-g2-62sol-seen-self-20261123T091705-789b40",
+"model": "gpt-6.2-sol",
+"cell": "self"
+},
+"c497a9c8c3": {
+"run_id": "v6-g2-6luna-seen-peer-20261123T091737-eb2d3b",
+"model": "gpt-6-luna",
+"cell": "peer"
+},
+"933cdb3b91": {
+"run_id": "v6-g2-61terra-seen-maintainer-20261123T091841-7db474",
+"model": "gpt-6.1-terra",
+"cell": "maintainer"
+},
+"f0d574d9b1": {
+"run_id": "v6-g2-6luna-seen-maintainer_memory_neutral-20261123T091857-ae853a",
+"model": "gpt-6-luna",
+"cell": "maintainer_memory_neutral"
+},
+"5551486cb7": {
+"run_id": "v6-g2-61terra-seen-maintainer_memory_neutral-20261123T091910-235258",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_memory_neutral"
+},
+"659f07f30a": {
+"run_id": "v6-g2-61terra-seen-maintainer_memory_neutral-20261123T091930-5e2af1",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_memory_neutral"
+},
+"b2eba97051": {
+"run_id": "v6-g2-61terra-seen-maintainer-20261123T092000-67c81e",
+"model": "gpt-6.1-terra",
+"cell": "maintainer"
+},
+"29f199c781": {
+"run_id": "v6-g2-61terra-seen-peer-20261123T092031-cee598",
+"model": "gpt-6.1-terra",
+"cell": "peer"
+},
+"6329f7ac76": {
+"run_id": "v6-g2-61terra-seen-maintainer-20261123T092053-81c5ea",
+"model": "gpt-6.1-terra",
+"cell": "maintainer"
+},
+"8da427bd6d": {
+"run_id": "v6-g2-6luna-seen-maintainer-20261123T092112-a8f234",
+"model": "gpt-6-luna",
+"cell": "maintainer"
+},
+"91b1da1c88": {
+"run_id": "v6-g2-6astra-seen-maintainer-20261123T092127-ede5b9",
+"model": "gpt-6-astra",
+"cell": "maintainer"
+},
+"9ff3ee6474": {
+"run_id": "v6-g2-6luna-seen-peer-20261123T092157-5c817f",
+"model": "gpt-6-luna",
+"cell": "peer"
+},
+"36f7b261d1": {
+"run_id": "v6-g2-62sol-seen-peer-20261123T092210-5bf779",
+"model": "gpt-6.2-sol",
+"cell": "peer"
+},
+"969ed4446d": {
+"run_id": "v6-g2-6astra-seen-self-20261123T092222-61f2b3",
+"model": "gpt-6-astra",
+"cell": "self"
+},
+"21a7b6eb1c": {
+"run_id": "v6-g2-61terra-seen-maintainer_code-20261123T092251-ce32a9",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_code"
+},
+"0d77c44dea": {
+"run_id": "v6-g2-6astra-seen-maintainer-20261123T092333-b436f0",
+"model": "gpt-6-astra",
+"cell": "maintainer"
+},
+"9b8eab0c5b": {
+"run_id": "v6-g2-61terra-seen-maintainer_code-20261123T092358-ca55ab",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_code"
+},
+"06ca3a706d": {
+"run_id": "v6-g2-61terra-seen-self-20261123T092425-b27e22",
+"model": "gpt-6.1-terra",
+"cell": "self"
+},
+"177c66e6c0": {
+"run_id": "v6-g2-6astra-seen-maintainer_memory_neutral-20261123T092442-d4a988",
+"model": "gpt-6-astra",
+"cell": "maintainer_memory_neutral"
+},
+"969ee89696": {
+"run_id": "v6-g2-61terra-seen-peer-20261123T092600-ecb815",
+"model": "gpt-6.1-terra",
+"cell": "peer"
+},
+"2915bced1f": {
+"run_id": "v6-g2-6astra-seen-peer-20261123T092651-befa5c",
+"model": "gpt-6-astra",
+"cell": "peer"
+},
+"0ac9b89d60": {
+"run_id": "v6-g2-6astra-seen-self-20261123T092716-ff6cec",
+"model": "gpt-6-astra",
+"cell": "self"
+},
+"7742c7f997": {
+"run_id": "v6-g2-6astra-seen-self-20261123T092739-aff71a",
+"model": "gpt-6-astra",
+"cell": "self"
+},
+"079cd5a4ea": {
+"run_id": "v6-g2-62sol-seen-self-20261123T092807-1ccf3d",
+"model": "gpt-6.2-sol",
+"cell": "self"
+},
+"5ddc5010de": {
+"run_id": "v6-g2-6luna-seen-maintainer_code-20261123T092818-707895",
+"model": "gpt-6-luna",
+"cell": "maintainer_code"
+},
+"3912f4d3e3": {
+"run_id": "v6-g2-6luna-seen-peer-20261123T092833-217276",
+"model": "gpt-6-luna",
+"cell": "peer"
+},
+"321cc5b027": {
+"run_id": "v6-g2-6luna-seen-maintainer_memory_neutral-20261123T092847-ed51eb",
+"model": "gpt-6-luna",
+"cell": "maintainer_memory_neutral"
+},
+"4b1465cc84": {
+"run_id": "v6-g2-6astra-seen-self-20261123T092859-76b86f",
+"model": "gpt-6-astra",
+"cell": "self"
+},
+"9b1dc15816": {
+"run_id": "v6-g2-62sol-seen-peer-20261123T092945-4acfdd",
+"model": "gpt-6.2-sol",
+"cell": "peer"
+},
+"5fb0919cd2": {
+"run_id": "v6-g2-6luna-seen-peer-20261123T092956-9d5426",
+"model": "gpt-6-luna",
+"cell": "peer"
+},
+"90854bf81c": {
+"run_id": "v6-g2-6luna-seen-maintainer_code-20261123T093011-426200",
+"model": "gpt-6-luna",
+"cell": "maintainer_code"
+},
+"39c773c84c": {
+"run_id": "v6-g2-62sol-seen-peer-20261123T093031-dd76a9",
+"model": "gpt-6.2-sol",
+"cell": "peer"
+},
+"5a38fdb9cf": {
+"run_id": "v6-g2-61terra-seen-peer-20261123T093043-242879",
+"model": "gpt-6.1-terra",
+"cell": "peer"
+},
+"dbd6f2c222": {
+"run_id": "v6-g2-6astra-seen-maintainer_code-20261123T093105-11805c",
+"model": "gpt-6-astra",
+"cell": "maintainer_code"
+},
+"448d9edae9": {
+"run_id": "v6-g2-6astra-seen-self-20261123T093129-5b452e",
+"model": "gpt-6-astra",
+"cell": "self"
+},
+"f880c53520": {
+"run_id": "v6-g2-6astra-seen-peer-20261123T093209-1bc04e",
+"model": "gpt-6-astra",
+"cell": "peer"
+},
+"90a664435a": {
+"run_id": "v6-g2-62sol-seen-self-20261123T093257-7c2e16",
+"model": "gpt-6.2-sol",
+"cell": "self"
+},
+"90522e2d18": {
+"run_id": "v6-g2-62sol-seen-maintainer-20261123T093337-4a7eae",
+"model": "gpt-6.2-sol",
+"cell": "maintainer"
+},
+"465b5e09e6": {
+"run_id": "v6-g2-62sol-seen-peer-20261123T093350-9eeb93",
+"model": "gpt-6.2-sol",
+"cell": "peer"
+},
+"70fa244978": {
+"run_id": "v6-g2-62sol-seen-maintainer_memory_neutral-20261123T093402-c7ce2a",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_memory_neutral"
+},
+"6528c1159a": {
+"run_id": "v6-g2-6astra-seen-self-20261123T093415-3dc3c5",
+"model": "gpt-6-astra",
+"cell": "self"
+},
+"ab9bd7d3dc": {
+"run_id": "v6-g2-61terra-seen-peer-20261123T093514-3559c4",
+"model": "gpt-6.1-terra",
+"cell": "peer"
+},
+"b63a1511ab": {
+"run_id": "v6-g2-6luna-seen-maintainer-20261123T093531-24a4f9",
+"model": "gpt-6-luna",
+"cell": "maintainer"
+},
+"e937777b8f": {
+"run_id": "v6-g2-62sol-seen-maintainer_memory_neutral-20261123T093610-dc4c80",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_memory_neutral"
+},
+"24d7f5ea3c": {
+"run_id": "v6-g2-61terra-seen-maintainer-20261123T093706-7db006",
+"model": "gpt-6.1-terra",
+"cell": "maintainer"
+},
+"9808704f7a": {
+"run_id": "v6-g2-6astra-seen-maintainer_memory_neutral-20261123T093731-017dab",
+"model": "gpt-6-astra",
+"cell": "maintainer_memory_neutral"
+},
+"708c6c2438": {
+"run_id": "v6-g2-62sol-seen-maintainer_code-20261123T093754-23d64f",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_code"
+},
+"4e043f17f2": {
+"run_id": "v6-g2-6astra-seen-maintainer_code-20261123T093808-d7870b",
+"model": "gpt-6-astra",
+"cell": "maintainer_code"
+},
+"137b676832": {
+"run_id": "v6-g2-6astra-seen-maintainer_memory_neutral-20261123T093832-5e955f",
+"model": "gpt-6-astra",
+"cell": "maintainer_memory_neutral"
+},
+"7ff5589659": {
+"run_id": "v6-g2-61terra-seen-self-20261123T093852-40e8a6",
+"model": "gpt-6.1-terra",
+"cell": "self"
+},
+"a4def9ecd8": {
+"run_id": "v6-g2-61terra-seen-maintainer-20261123T093917-ee0371",
+"model": "gpt-6.1-terra",
+"cell": "maintainer"
+},
+"55551528f8": {
+"run_id": "v6-g2-62sol-seen-maintainer_code-20261123T094014-b1cda2",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_code"
+},
+"70498be015": {
+"run_id": "v6-g2-61terra-seen-maintainer-20261123T094027-eb06f9",
+"model": "gpt-6.1-terra",
+"cell": "maintainer"
+},
+"3b970b41f2": {
+"run_id": "v6-g2-62sol-seen-self-20261123T094114-7731d5",
+"model": "gpt-6.2-sol",
+"cell": "self"
+},
+"10c0d3561a": {
+"run_id": "v6-g2-6luna-seen-maintainer_code-20261123T094130-378170",
+"model": "gpt-6-luna",
+"cell": "maintainer_code"
+},
+"7ffe08ef6c": {
+"run_id": "v6-g2-6luna-seen-maintainer_code-20261123T094220-7d0f56",
+"model": "gpt-6-luna",
+"cell": "maintainer_code"
+},
+"0983d5d3ca": {
+"run_id": "v6-g2-61terra-seen-peer-20261123T094235-1e03b2",
+"model": "gpt-6.1-terra",
+"cell": "peer"
+},
+"782645c12d": {
+"run_id": "v6-g2-62sol-seen-maintainer_code-20261123T094300-4aec89",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_code"
+},
+"4c7927c36c": {
+"run_id": "v6-g2-6luna-seen-peer-20261123T094313-2fa312",
+"model": "gpt-6-luna",
+"cell": "peer"
+},
+"41d6a9c0f9": {
+"run_id": "v6-g2-6astra-seen-peer-20261123T094331-4098d2",
+"model": "gpt-6-astra",
+"cell": "peer"
+},
+"af729523f1": {
+"run_id": "v6-g2-61terra-seen-peer-20261123T094400-0b52cb",
+"model": "gpt-6.1-terra",
+"cell": "peer"
+},
+"6b6b0fe4d6": {
+"run_id": "v6-g2-6astra-seen-maintainer_memory_neutral-20261123T094423-5c8c62",
+"model": "gpt-6-astra",
+"cell": "maintainer_memory_neutral"
+},
+"be75c357cb": {
+"run_id": "v6-g2-6luna-seen-peer-20261123T094443-59defa",
+"model": "gpt-6-luna",
+"cell": "peer"
+},
+"8ce7973797": {
+"run_id": "v6-g2-62sol-seen-maintainer_code-20261123T094457-0df6da",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_code"
+},
+"d89dd2581d": {
+"run_id": "v6-g2-6luna-seen-self-20261123T094510-58a19c",
+"model": "gpt-6-luna",
+"cell": "self"
+},
+"8532b9b590": {
+"run_id": "v6-g2-61terra-seen-maintainer-20261123T094524-09822b",
+"model": "gpt-6.1-terra",
+"cell": "maintainer"
+},
+"2e30775ce6": {
+"run_id": "v6-g2-6luna-seen-maintainer-20261123T094556-650f63",
+"model": "gpt-6-luna",
+"cell": "maintainer"
+},
+"27976755e2": {
+"run_id": "v6-g2-61terra-seen-peer-20261123T094610-833056",
+"model": "gpt-6.1-terra",
+"cell": "peer"
+},
+"eb0f6c909c": {
+"run_id": "v6-g2-6astra-seen-maintainer-20261123T094636-5238e2",
+"model": "gpt-6-astra",
+"cell": "maintainer"
+},
+"04d9ca7917": {
+"run_id": "v6-g2-6astra-seen-maintainer-20261123T094659-7f5f2c",
+"model": "gpt-6-astra",
+"cell": "maintainer"
+},
+"1c18243c27": {
+"run_id": "v6-g2-62sol-seen-peer-20261123T094727-d9f6fd",
+"model": "gpt-6.2-sol",
+"cell": "peer"
+},
+"646037b446": {
+"run_id": "v6-g2-62sol-seen-peer-20261123T094741-11fffb",
+"model": "gpt-6.2-sol",
+"cell": "peer"
+},
+"f227f421bd": {
+"run_id": "v6-g2-6luna-seen-maintainer_memory_neutral-20261123T094755-ef32bc",
+"model": "gpt-6-luna",
+"cell": "maintainer_memory_neutral"
+},
+"e6f633b6dd": {
+"run_id": "v6-g2-61terra-seen-self-20261123T094812-5f7c45",
+"model": "gpt-6.1-terra",
+"cell": "self"
+},
+"7843ab1120": {
+"run_id": "v6-g2-62sol-seen-maintainer-20261123T094837-2bf33c",
+"model": "gpt-6.2-sol",
+"cell": "maintainer"
+},
+"270933dcd4": {
+"run_id": "v6-g2-6astra-seen-maintainer-20261123T094851-d5cfaf",
+"model": "gpt-6-astra",
+"cell": "maintainer"
+},
+"3a56a971ee": {
+"run_id": "v6-g2-6astra-seen-peer-20261123T094911-8f81a0",
+"model": "gpt-6-astra",
+"cell": "peer"
+},
+"478a9f9c64": {
+"run_id": "v6-g2-6luna-seen-maintainer_memory_neutral-20261123T094935-717c42",
+"model": "gpt-6-luna",
+"cell": "maintainer_memory_neutral"
+},
+"914d51e732": {
+"run_id": "v6-g2-6luna-seen-self-20261123T094950-1b66db",
+"model": "gpt-6-luna",
+"cell": "self"
+},
+"5fcd609d4a": {
+"run_id": "v6-g2-62sol-seen-maintainer-20261123T095032-fa6cd6",
+"model": "gpt-6.2-sol",
+"cell": "maintainer"
+},
+"0d669b3285": {
+"run_id": "v6-g2-61terra-seen-maintainer_memory_neutral-20261123T095046-ec45b5",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_memory_neutral"
+},
+"4f2585182d": {
+"run_id": "v6-g2-6luna-seen-maintainer_memory_neutral-20261123T095104-627512",
+"model": "gpt-6-luna",
+"cell": "maintainer_memory_neutral"
+},
+"784d9ddf24": {
+"run_id": "v6-g2-62sol-seen-maintainer_memory_neutral-20261123T095117-2874e7",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_memory_neutral"
+},
+"fcfa8f5d4e": {
+"run_id": "v6-g2-6astra-seen-peer-20261123T095128-eaa36d",
+"model": "gpt-6-astra",
+"cell": "peer"
+},
+"3e63e01754": {
+"run_id": "v6-g2-61terra-seen-self-20261123T095210-803251",
+"model": "gpt-6.1-terra",
+"cell": "self"
+},
+"4a60c13580": {
+"run_id": "v6-g2-61terra-seen-maintainer_memory_neutral-20261123T095234-6bc21f",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_memory_neutral"
+},
+"b640395d0d": {
+"run_id": "v6-g2-62sol-seen-self-20261123T095252-c2b068",
+"model": "gpt-6.2-sol",
+"cell": "self"
+},
+"a43a31dab1": {
+"run_id": "v6-g2-6astra-seen-self-20261123T095337-5b21f8",
+"model": "gpt-6-astra",
+"cell": "self"
+},
+"80e959a285": {
+"run_id": "v6-g2-61terra-seen-self-20261123T095410-c7f45f",
+"model": "gpt-6.1-terra",
+"cell": "self"
+},
+"bd57168fcb": {
+"run_id": "v6-g2-62sol-seen-maintainer-20261123T095444-9c6a1d",
+"model": "gpt-6.2-sol",
+"cell": "maintainer"
+},
+"5347b56255": {
+"run_id": "v6-g2-62sol-seen-self-20261123T095523-d24f4d",
+"model": "gpt-6.2-sol",
+"cell": "self"
+},
+"009438b6d7": {
+"run_id": "v6-g2-62sol-seen-maintainer-20261123T095536-ec34f9",
+"model": "gpt-6.2-sol",
+"cell": "maintainer"
+},
+"7f4fd31a6d": {
+"run_id": "v6-g2-62sol-seen-maintainer_memory_neutral-20261123T095548-8d439f",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_memory_neutral"
+},
+"9b3495b062": {
+"run_id": "v6-g2-62sol-seen-self-20261123T095600-7ad0d1",
+"model": "gpt-6.2-sol",
+"cell": "self"
+},
+"cb35443dfb": {
+"run_id": "v6-g2-62sol-seen-self-20261123T095610-5dd931",
+"model": "gpt-6.2-sol",
+"cell": "self"
+},
+"4cabf0181b": {
+"run_id": "v6-g2-6luna-seen-self-20261123T095622-971704",
+"model": "gpt-6-luna",
+"cell": "self"
+},
+"02f379dbc4": {
+"run_id": "v6-g2-6luna-seen-self-20261123T095641-d874ab",
+"model": "gpt-6-luna",
+"cell": "self"
+},
+"9351f3586d": {
+"run_id": "v6-g2-6astra-seen-peer-20261123T095701-6b7a67",
+"model": "gpt-6-astra",
+"cell": "peer"
+},
+"15260ea7ca": {
+"run_id": "v6-g2-61terra-seen-maintainer_code-20261123T095742-d718eb",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_code"
+},
+"aefeee37ba": {
+"run_id": "v6-g2-61terra-seen-maintainer_code-20261123T095802-3d35ee",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_code"
+},
+"fa3b438a60": {
+"run_id": "v6-g2-61terra-seen-maintainer_memory_neutral-20261123T095833-89d245",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_memory_neutral"
+},
+"a3ee78d12d": {
+"run_id": "v6-g2-61terra-seen-peer-20261123T095942-cbd413",
+"model": "gpt-6.1-terra",
+"cell": "peer"
+},
+"30dfa88cb3": {
+"run_id": "v6-g2-6astra-seen-maintainer_code-20261123T100004-9e6c4c",
+"model": "gpt-6-astra",
+"cell": "maintainer_code"
+},
+"c72223a33e": {
+"run_id": "v6-g2-62sol-seen-maintainer_memory_neutral-20261123T100033-7092bb",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_memory_neutral"
+},
+"b179a6290d": {
+"run_id": "v6-g2-6astra-seen-maintainer_memory_neutral-20261123T100048-a79a06",
+"model": "gpt-6-astra",
+"cell": "maintainer_memory_neutral"
+},
+"4f00b72b3d": {
+"run_id": "v6-g2-62sol-seen-maintainer_code-20261123T100115-bffca3",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_code"
+},
+"7bef325e2d": {
+"run_id": "v6-g2-61terra-seen-maintainer_memory_neutral-20261123T100150-a970cf",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_memory_neutral"
+},
+"406a22d26e": {
+"run_id": "v6-g2-62sol-seen-maintainer_code-20261123T100208-823fc2",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_code"
+},
+"b61674adb2": {
+"run_id": "v6-g2-62sol-seen-maintainer_memory_neutral-20261123T100221-ae7207",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_memory_neutral"
+},
+"90e77c6385": {
+"run_id": "v6-g2-6astra-seen-peer-20261123T100233-197903",
+"model": "gpt-6-astra",
+"cell": "peer"
+},
+"5f7cc167f6": {
+"run_id": "v6-g2-6astra-seen-maintainer-20261123T100308-aff337",
+"model": "gpt-6-astra",
+"cell": "maintainer"
+},
+"63e3b054d7": {
+"run_id": "v6-g2-6luna-seen-self-20261123T100335-4a5da9",
+"model": "gpt-6-luna",
+"cell": "self"
+},
+"0d6e885a62": {
+"run_id": "v6-g2-6luna-seen-peer-20261123T100350-83a607",
+"model": "gpt-6-luna",
+"cell": "peer"
+},
+"2c8c1f1c9b": {
+"run_id": "v6-g2-6astra-seen-peer-20261123T100405-adb9ae",
+"model": "gpt-6-astra",
+"cell": "peer"
+},
+"baf8f2c997": {
+"run_id": "v6-g2-61terra-seen-maintainer_code-20261123T100449-9db09f",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_code"
+},
+"2ff4b41b20": {
+"run_id": "v6-g2-61terra-seen-maintainer_memory_neutral-20261123T100526-fd9dd0",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_memory_neutral"
+},
+"8dffb13b5c": {
+"run_id": "v6-g2-6luna-seen-peer-20261123T100544-cbe68a",
+"model": "gpt-6-luna",
+"cell": "peer"
+},
+"79f1fb1b59": {
+"run_id": "v6-g2-6luna-seen-maintainer_memory_neutral-20261123T100559-170e6c",
+"model": "gpt-6-luna",
+"cell": "maintainer_memory_neutral"
+},
+"b83709b0c3": {
+"run_id": "v6-g2-62sol-seen-maintainer_code-20261123T100617-2aa8fb",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_code"
+},
+"6a1b56f4b0": {
+"run_id": "v6-g2-61terra-seen-maintainer_code-20261123T100632-f78f50",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_code"
+},
+"7b2f633330": {
+"run_id": "v6-g2-61terra-seen-maintainer_memory_neutral-20261123T100801-81981e",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_memory_neutral"
+},
+"2b28284d45": {
+"run_id": "v6-g2-62sol-seen-maintainer_code-20261123T100818-4d3717",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_code"
+},
+"2a4daf9d02": {
+"run_id": "v6-g2-62sol-seen-self-20261123T100833-88f118",
+"model": "gpt-6.2-sol",
+"cell": "self"
+},
+"0e523e7ad7": {
+"run_id": "v6-g2-62sol-seen-self-20261123T100908-f998c1",
+"model": "gpt-6.2-sol",
+"cell": "self"
+},
+"d364238d66": {
+"run_id": "v6-g2-6luna-seen-self-20261123T100921-e8ed5e",
+"model": "gpt-6-luna",
+"cell": "self"
+},
+"11aacddbda": {
+"run_id": "v6-g2-6astra-seen-maintainer-20261123T100937-1a2cd3",
+"model": "gpt-6-astra",
+"cell": "maintainer"
+},
+"814a100611": {
+"run_id": "v6-g2-62sol-seen-maintainer-20261123T101001-aa9961",
+"model": "gpt-6.2-sol",
+"cell": "maintainer"
+},
+"15b3b1d209": {
+"run_id": "v6-g2-6luna-seen-peer-20261123T101014-a9e86a",
+"model": "gpt-6-luna",
+"cell": "peer"
+},
+"7211153419": {
+"run_id": "v6-g2-62sol-seen-peer-20261123T101031-60a476",
+"model": "gpt-6.2-sol",
+"cell": "peer"
+},
+"e08a237f42": {
+"run_id": "v6-g2-62sol-seen-maintainer_code-20261123T101045-d7549c",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_code"
+},
+"cdfac04df3": {
+"run_id": "v6-g2-6luna-seen-maintainer_memory_neutral-20261123T101058-e64e56",
+"model": "gpt-6-luna",
+"cell": "maintainer_memory_neutral"
+},
+"e710a32290": {
+"run_id": "v6-g2-62sol-seen-self-20261123T101112-f2f44d",
+"model": "gpt-6.2-sol",
+"cell": "self"
+},
+"176b1e861d": {
+"run_id": "v6-g2-6luna-seen-maintainer_code-20261123T101124-a7e6e4",
+"model": "gpt-6-luna",
+"cell": "maintainer_code"
+},
+"8c3803d911": {
+"run_id": "v6-g2-6astra-seen-peer-20261123T101149-c05b82",
+"model": "gpt-6-astra",
+"cell": "peer"
+},
+"4627167f88": {
+"run_id": "v6-g2-62sol-seen-maintainer_code-20261123T101211-b498df",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_code"
+},
+"06cd933b94": {
+"run_id": "v6-g2-62sol-seen-peer-20261123T101224-98c426",
+"model": "gpt-6.2-sol",
+"cell": "peer"
+},
+"0637a49caa": {
+"run_id": "v6-g2-62sol-seen-maintainer_memory_neutral-20261123T101236-f8599a",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_memory_neutral"
+},
+"d08c774d62": {
+"run_id": "v6-g2-6luna-seen-maintainer-20261123T101246-f9f955",
+"model": "gpt-6-luna",
+"cell": "maintainer"
+},
+"e6d6ee2d79": {
+"run_id": "v6-g2-6astra-seen-peer-20261123T101332-f933c0",
+"model": "gpt-6-astra",
+"cell": "peer"
+},
+"cc1d117bb8": {
+"run_id": "v6-g2-6astra-seen-self-20261123T101439-7c5408",
+"model": "gpt-6-astra",
+"cell": "self"
+},
+"f15fe180fe": {
+"run_id": "v6-g2-6luna-seen-self-20261123T101528-760c18",
+"model": "gpt-6-luna",
+"cell": "self"
+},
+"c72528e001": {
+"run_id": "v6-g2-6astra-seen-maintainer_memory_neutral-20261123T101544-d902f3",
+"model": "gpt-6-astra",
+"cell": "maintainer_memory_neutral"
+},
+"b8fc845890": {
+"run_id": "v6-g2-61terra-seen-maintainer-20261123T101627-e05bec",
+"model": "gpt-6.1-terra",
+"cell": "maintainer"
+},
+"6fb67923df": {
+"run_id": "v6-g2-6astra-seen-maintainer-20261123T101646-b852a2",
+"model": "gpt-6-astra",
+"cell": "maintainer"
+},
+"50fa1c65bf": {
+"run_id": "v6-g2-6astra-seen-self-20261123T101710-7d4c72",
+"model": "gpt-6-astra",
+"cell": "self"
+},
+"b52878debc": {
+"run_id": "v6-g2-6luna-seen-peer-20261123T101732-242bdc",
+"model": "gpt-6-luna",
+"cell": "peer"
+},
+"d1189d4023": {
+"run_id": "v6-g2-6astra-seen-peer-20261123T101749-911584",
+"model": "gpt-6-astra",
+"cell": "peer"
+},
+"0147e900ae": {
+"run_id": "v6-g2-6luna-seen-maintainer_memory_neutral-20261123T101831-59afc3",
+"model": "gpt-6-luna",
+"cell": "maintainer_memory_neutral"
+},
+"cbe12a3467": {
+"run_id": "v6-g2-6luna-seen-maintainer-20261123T101845-6045c5",
+"model": "gpt-6-luna",
+"cell": "maintainer"
+},
+"572ff77495": {
+"run_id": "v6-g2-61terra-seen-maintainer_memory_neutral-20261123T101917-fb019e",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_memory_neutral"
+},
+"87c07a7da2": {
+"run_id": "v6-g2-62sol-seen-maintainer-20261123T101936-2999ce",
+"model": "gpt-6.2-sol",
+"cell": "maintainer"
+},
+"94a36c8fc4": {
+"run_id": "v6-g2-6luna-seen-maintainer_code-20261123T101947-c0cfb6",
+"model": "gpt-6-luna",
+"cell": "maintainer_code"
+},
+"7ddcb3d3d3": {
+"run_id": "v6-g2-6luna-seen-maintainer-20261123T102005-96c92b",
+"model": "gpt-6-luna",
+"cell": "maintainer"
+},
+"9f8bae3e14": {
+"run_id": "v6-g2-61terra-seen-maintainer-20261123T102043-859502",
+"model": "gpt-6.1-terra",
+"cell": "maintainer"
+},
+"cea1cf33a5": {
+"run_id": "v6-g2-62sol-seen-peer-20261123T102106-6e4849",
+"model": "gpt-6.2-sol",
+"cell": "peer"
+},
+"ad7a832f30": {
+"run_id": "v6-g2-6astra-seen-self-20261123T102117-dd451f",
+"model": "gpt-6-astra",
+"cell": "self"
+},
+"86119f61b6": {
+"run_id": "v6-g2-6luna-seen-maintainer_memory_neutral-20261123T102145-8651d4",
+"model": "gpt-6-luna",
+"cell": "maintainer_memory_neutral"
+},
+"15165159f6": {
+"run_id": "v6-g2-6astra-seen-maintainer_memory_neutral-20261123T102200-d0d801",
+"model": "gpt-6-astra",
+"cell": "maintainer_memory_neutral"
+},
+"b4b3670e58": {
+"run_id": "v6-g2-6luna-seen-maintainer_memory_neutral-20261123T102222-d7c93f",
+"model": "gpt-6-luna",
+"cell": "maintainer_memory_neutral"
+},
+"25388ba34a": {
+"run_id": "v6-g2-62sol-seen-peer-20261123T102234-aeb118",
+"model": "gpt-6.2-sol",
+"cell": "peer"
+},
+"5f9821402a": {
+"run_id": "v6-g2-6astra-seen-maintainer_code-20261123T102247-def4e1",
+"model": "gpt-6-astra",
+"cell": "maintainer_code"
+},
+"91b4bbc3fa": {
+"run_id": "v6-g2-62sol-seen-maintainer-20261123T102341-4112d2",
+"model": "gpt-6.2-sol",
+"cell": "maintainer"
+},
+"4ed4a38224": {
+"run_id": "v6-g2-6luna-seen-peer-20261123T102353-75f7a3",
+"model": "gpt-6-luna",
+"cell": "peer"
+},
+"385fd939c3": {
+"run_id": "v6-g2-62sol-seen-maintainer_memory_neutral-20261123T102410-ceb5a4",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_memory_neutral"
+},
+"be5d17e61f": {
+"run_id": "v6-g2-6luna-seen-self-20261123T102424-5b4d8d",
+"model": "gpt-6-luna",
+"cell": "self"
+},
+"df7f7012b8": {
+"run_id": "v6-g2-62sol-seen-self-20261123T102442-791acf",
+"model": "gpt-6.2-sol",
+"cell": "self"
+},
+"1703b2250f": {
+"run_id": "v6-g2-6luna-seen-peer-20261123T102453-75c0ec",
+"model": "gpt-6-luna",
+"cell": "peer"
+},
+"c46c897881": {
+"run_id": "v6-g2-61terra-seen-maintainer-20261123T102510-e78f6b",
+"model": "gpt-6.1-terra",
+"cell": "maintainer"
+},
+"a2ce3e84cd": {
+"run_id": "v6-g2-6luna-seen-self-20261123T102610-ffb662",
+"model": "gpt-6-luna",
+"cell": "self"
+},
+"ccc2d5eace": {
+"run_id": "v6-g2-62sol-seen-maintainer-20261123T102643-89f07f",
+"model": "gpt-6.2-sol",
+"cell": "maintainer"
+},
+"f1160423ff": {
+"run_id": "v6-g2-6luna-seen-maintainer-20261123T102656-101f5f",
+"model": "gpt-6-luna",
+"cell": "maintainer"
+},
+"c695f20ebf": {
+"run_id": "v6-g2-6luna-seen-maintainer_memory_neutral-20261123T102711-a8787c",
+"model": "gpt-6-luna",
+"cell": "maintainer_memory_neutral"
+},
+"7808ba8c73": {
+"run_id": "v6-g2-61terra-seen-maintainer-20261123T102724-2d52d7",
+"model": "gpt-6.1-terra",
+"cell": "maintainer"
+},
+"bdf6165dc8": {
+"run_id": "v6-g2-6astra-seen-self-20261123T102741-ddc0fb",
+"model": "gpt-6-astra",
+"cell": "self"
+},
+"bcee5deae9": {
+"run_id": "v6-g2-61terra-seen-maintainer-20261123T102759-684b62",
+"model": "gpt-6.1-terra",
+"cell": "maintainer"
+},
+"68c2b57234": {
+"run_id": "v6-g2-6astra-seen-maintainer-20261123T102816-df5926",
+"model": "gpt-6-astra",
+"cell": "maintainer"
+},
+"0c49e456f4": {
+"run_id": "v6-g2-6astra-seen-maintainer_memory_neutral-20261123T102837-9919e9",
+"model": "gpt-6-astra",
+"cell": "maintainer_memory_neutral"
+},
+"fd9ed898c6": {
+"run_id": "v6-g2-6astra-seen-maintainer_code-20261123T102855-ca943e",
+"model": "gpt-6-astra",
+"cell": "maintainer_code"
+},
+"1428eab54b": {
+"run_id": "v6-g2-62sol-seen-maintainer_memory_neutral-20261123T102917-3272b6",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_memory_neutral"
+},
+"eef711db47": {
+"run_id": "v6-g2-6luna-seen-self-20261123T102929-e6296b",
+"model": "gpt-6-luna",
+"cell": "self"
+},
+"bd4aec49c5": {
+"run_id": "v6-g2-61terra-seen-maintainer-20261123T102945-c516d3",
+"model": "gpt-6.1-terra",
+"cell": "maintainer"
+},
+"78f06ca412": {
+"run_id": "v6-g2-6astra-seen-maintainer_memory_neutral-20261123T103016-f9926d",
+"model": "gpt-6-astra",
+"cell": "maintainer_memory_neutral"
+},
+"d317da4096": {
+"run_id": "v6-g2-6astra-seen-maintainer-20261123T103036-0321fe",
+"model": "gpt-6-astra",
+"cell": "maintainer"
+},
+"474ecae655": {
+"run_id": "v6-g2-61terra-seen-maintainer_code-20261123T103058-de7569",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_code"
+},
+"7a2bca8d90": {
+"run_id": "v6-g2-62sol-seen-maintainer_code-20261123T103123-6d7d65",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_code"
+},
+"597d573d0f": {
+"run_id": "v6-g2-6astra-seen-peer-20261123T103136-476ab0",
+"model": "gpt-6-astra",
+"cell": "peer"
+},
+"55d0a4b61b": {
+"run_id": "v6-g2-61terra-seen-maintainer_code-20261123T103228-56a4e8",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_code"
+},
+"dcf67467fd": {
+"run_id": "v6-g2-6luna-seen-maintainer_code-20261123T103253-e4f005",
+"model": "gpt-6-luna",
+"cell": "maintainer_code"
+},
+"4a7ad9ae54": {
+"run_id": "v6-g2-6astra-seen-maintainer-20261123T103315-7d3a2a",
+"model": "gpt-6-astra",
+"cell": "maintainer"
+},
+"6fedba4816": {
+"run_id": "v6-g2-6luna-seen-maintainer-20261123T103333-fcee25",
+"model": "gpt-6-luna",
+"cell": "maintainer"
+},
+"80ff1feb8b": {
+"run_id": "v6-g2-62sol-seen-self-20261123T103349-5d9a1d",
+"model": "gpt-6.2-sol",
+"cell": "self"
+},
+"b9a4edcc1a": {
+"run_id": "v6-g2-61terra-seen-maintainer_memory_neutral-20261123T103403-39ccc3",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_memory_neutral"
+},
+"05eb7deb11": {
+"run_id": "v6-g2-61terra-seen-self-20261123T103419-91628e",
+"model": "gpt-6.1-terra",
+"cell": "self"
+},
+"d247a56278": {
+"run_id": "v6-g2-6luna-seen-maintainer_code-20261123T103450-5d31b7",
+"model": "gpt-6-luna",
+"cell": "maintainer_code"
+},
+"0951ca3625": {
+"run_id": "v6-g2-6astra-seen-peer-20261123T103507-702fa3",
+"model": "gpt-6-astra",
+"cell": "peer"
+},
+"eaa3168b93": {
+"run_id": "v6-g2-6luna-seen-maintainer_code-20261123T103545-fb550a",
+"model": "gpt-6-luna",
+"cell": "maintainer_code"
+},
+"a950977534": {
+"run_id": "v6-g2-6luna-seen-maintainer_code-20261123T103611-f473a9",
+"model": "gpt-6-luna",
+"cell": "maintainer_code"
+},
+"3ee843a73f": {
+"run_id": "v6-g2-6luna-seen-maintainer-20261123T103632-786efa",
+"model": "gpt-6-luna",
+"cell": "maintainer"
+},
+"0211deb11b": {
+"run_id": "v6-g2-61terra-seen-peer-20261123T103711-fefc22",
+"model": "gpt-6.1-terra",
+"cell": "peer"
+},
+"e4644a15e7": {
+"run_id": "v6-g2-6astra-seen-maintainer_code-20261123T103730-ea384a",
+"model": "gpt-6-astra",
+"cell": "maintainer_code"
+},
+"e968222e8e": {
+"run_id": "v6-g2-6luna-seen-maintainer_code-20261123T103750-4edfd8",
+"model": "gpt-6-luna",
+"cell": "maintainer_code"
+},
+"7875cfb8b8": {
+"run_id": "v6-g2-6luna-seen-peer-20261123T103805-ee419e",
+"model": "gpt-6-luna",
+"cell": "peer"
+},
+"f23c58159a": {
+"run_id": "v6-g2-62sol-seen-maintainer-20261123T103820-11717c",
+"model": "gpt-6.2-sol",
+"cell": "maintainer"
+},
+"f9bec0f405": {
+"run_id": "v6-g2-62sol-seen-maintainer_code-20261123T103833-5abbe4",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_code"
+},
+"1d16c0645a": {
+"run_id": "v6-g2-6astra-seen-maintainer-20261123T103845-193d2b",
+"model": "gpt-6-astra",
+"cell": "maintainer"
+},
+"16af453922": {
+"run_id": "v6-g2-6luna-seen-self-20261123T103907-71867a",
+"model": "gpt-6-luna",
+"cell": "self"
+},
+"887136202b": {
+"run_id": "v6-g2-62sol-seen-peer-20261123T103922-f29ce0",
+"model": "gpt-6.2-sol",
+"cell": "peer"
+},
+"5e660cbc5b": {
+"run_id": "v6-g2-61terra-seen-self-20261123T104007-8e58ba",
+"model": "gpt-6.1-terra",
+"cell": "self"
+},
+"347c17563e": {
+"run_id": "v6-g2-61terra-seen-self-20261123T104033-97d03a",
+"model": "gpt-6.1-terra",
+"cell": "self"
+},
+"561ddcfd4b": {
+"run_id": "v6-g2-6astra-seen-maintainer_memory_neutral-20261123T104114-0bae0d",
+"model": "gpt-6-astra",
+"cell": "maintainer_memory_neutral"
+},
+"4e77ada9ce": {
+"run_id": "v6-g2-62sol-seen-peer-20261123T104132-24e726",
+"model": "gpt-6.2-sol",
+"cell": "peer"
+},
+"81a82e1556": {
+"run_id": "v6-g2-62sol-seen-self-20261123T104144-20b9cf",
+"model": "gpt-6.2-sol",
+"cell": "self"
+},
+"ac87759322": {
+"run_id": "v6-g2-6astra-seen-peer-20261123T104158-2b1f6f",
+"model": "gpt-6-astra",
+"cell": "peer"
+},
+"7298f8bac2": {
+"run_id": "v6-g2-62sol-seen-maintainer_memory_neutral-20261123T104244-9e2f57",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_memory_neutral"
+},
+"354eb6d2d3": {
+"run_id": "v6-g2-6astra-seen-maintainer_memory_neutral-20261123T104259-52eff7",
+"model": "gpt-6-astra",
+"cell": "maintainer_memory_neutral"
+},
+"7ccddad4ee": {
+"run_id": "v6-g2-62sol-seen-maintainer-20261123T104422-575b7b",
+"model": "gpt-6.2-sol",
+"cell": "maintainer"
+},
+"c7944c45fa": {
+"run_id": "v6-g2-62sol-seen-maintainer_memory_neutral-20261123T104510-a3580a",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_memory_neutral"
+},
+"8d7e57d246": {
+"run_id": "v6-g2-61terra-seen-maintainer_memory_neutral-20261123T104522-f5f3e1",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_memory_neutral"
+},
+"4f95ab6fb1": {
+"run_id": "v6-g2-62sol-seen-maintainer-20261123T104540-46d303",
+"model": "gpt-6.2-sol",
+"cell": "maintainer"
+},
+"a65c3f2350": {
+"run_id": "v6-g2-6astra-seen-maintainer_memory_neutral-20261123T104551-893809",
+"model": "gpt-6-astra",
+"cell": "maintainer_memory_neutral"
+},
+"75337c18ff": {
+"run_id": "v6-g2-62sol-seen-maintainer-20261123T104609-0850b6",
+"model": "gpt-6.2-sol",
+"cell": "maintainer"
+},
+"d3aa636ee8": {
+"run_id": "v6-g2-6astra-seen-maintainer-20261123T104623-3d0617",
+"model": "gpt-6-astra",
+"cell": "maintainer"
+},
+"693417a3a5": {
+"run_id": "v6-g2-62sol-seen-maintainer_memory_neutral-20261123T104656-5976b0",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_memory_neutral"
+},
+"9c7f500f14": {
+"run_id": "v6-g2-62sol-seen-maintainer-20261123T104709-0cfdd7",
+"model": "gpt-6.2-sol",
+"cell": "maintainer"
+},
+"f02ce07cb3": {
+"run_id": "v6-g2-6luna-seen-maintainer_memory_neutral-20261123T104720-6f091f",
+"model": "gpt-6-luna",
+"cell": "maintainer_memory_neutral"
+},
+"74875be1ef": {
+"run_id": "v6-g2-61terra-seen-peer-20261123T104734-66727b",
+"model": "gpt-6.1-terra",
+"cell": "peer"
+},
+"ede2517242": {
+"run_id": "v6-g2-62sol-seen-maintainer_memory_neutral-20261123T104757-7de0d5",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_memory_neutral"
+},
+"41ffa44935": {
+"run_id": "v6-g2-6astra-seen-peer-20261123T104809-b20c70",
+"model": "gpt-6-astra",
+"cell": "peer"
+},
+"1252617caa": {
+"run_id": "v6-g2-61terra-seen-self-20261123T104830-a0a344",
+"model": "gpt-6.1-terra",
+"cell": "self"
+},
+"e8a8512d67": {
+"run_id": "v6-g2-61terra-seen-peer-20261123T104941-6299d4",
+"model": "gpt-6.1-terra",
+"cell": "peer"
+},
+"b2b3489a19": {
+"run_id": "v6-g2-6luna-seen-maintainer_code-20261123T105002-c3d5c2",
+"model": "gpt-6-luna",
+"cell": "maintainer_code"
+},
+"46581a2ba1": {
+"run_id": "v6-g2-6astra-seen-self-20261123T105019-15fd1e",
+"model": "gpt-6-astra",
+"cell": "self"
+},
+"cdace051f9": {
+"run_id": "v6-g2-6astra-seen-maintainer-20261123T105039-0e7c79",
+"model": "gpt-6-astra",
+"cell": "maintainer"
+},
+"940279ecb7": {
+"run_id": "v6-g2-6astra-seen-maintainer_code-20261123T105055-0bb8f1",
+"model": "gpt-6-astra",
+"cell": "maintainer_code"
+},
+"15252a2a44": {
+"run_id": "v6-g2-61terra-seen-maintainer_code-20261123T105114-ef7c78",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_code"
+},
+"ddc4580606": {
+"run_id": "v6-g2-61terra-seen-peer-20261123T105243-3bec9e",
+"model": "gpt-6.1-terra",
+"cell": "peer"
+},
+"f5298b3ac5": {
+"run_id": "v6-g2-6luna-seen-maintainer_code-20261123T105310-784712",
+"model": "gpt-6-luna",
+"cell": "maintainer_code"
+},
+"4765bcd084": {
+"run_id": "v6-g2-62sol-seen-maintainer_memory_neutral-20261123T105330-6de793",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_memory_neutral"
+},
+"b8ae23dee6": {
+"run_id": "v6-g2-61terra-seen-maintainer-20261123T105344-a38d96",
+"model": "gpt-6.1-terra",
+"cell": "maintainer"
+},
+"803f89dc8e": {
+"run_id": "v6-g2-61terra-seen-maintainer_code-20261123T105407-e42970",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_code"
+},
+"4c906424ba": {
+"run_id": "v6-g2-6astra-seen-maintainer_code-20261123T105429-7c6ff4",
+"model": "gpt-6-astra",
+"cell": "maintainer_code"
+},
+"286210a304": {
+"run_id": "v6-g2-6luna-seen-self-20261123T105451-d27e36",
+"model": "gpt-6-luna",
+"cell": "self"
+},
+"7d2ce9b1fe": {
+"run_id": "v6-g2-6astra-seen-peer-20261123T105505-f6e8b8",
+"model": "gpt-6-astra",
+"cell": "peer"
+},
+"b078f48f1f": {
+"run_id": "v6-g2-61terra-seen-maintainer_code-20261123T105522-e415a9",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_code"
+},
+"f17e3293b6": {
+"run_id": "v6-g2-6luna-seen-peer-20261123T105600-9681d4",
+"model": "gpt-6-luna",
+"cell": "peer"
+},
+"663d9648eb": {
+"run_id": "v6-g2-61terra-seen-maintainer-20261123T105644-3a1e20",
+"model": "gpt-6.1-terra",
+"cell": "maintainer"
+},
+"cabd98998b": {
+"run_id": "v6-g2-62sol-seen-maintainer_code-20261123T105756-4282fe",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_code"
+},
+"bbbb3ecf31": {
+"run_id": "v6-g2-6luna-seen-self-20261123T105834-de5017",
+"model": "gpt-6-luna",
+"cell": "self"
+},
+"d4c96959bd": {
+"run_id": "v6-g2-6astra-seen-maintainer_memory_neutral-20261123T105851-8f65fb",
+"model": "gpt-6-astra",
+"cell": "maintainer_memory_neutral"
+},
+"5ce0d70134": {
+"run_id": "v6-g2-6astra-seen-self-20261123T105909-6d8863",
+"model": "gpt-6-astra",
+"cell": "self"
+},
+"4ef39aae8e": {
+"run_id": "v6-g2-6luna-seen-self-20261123T105925-dab5e5",
+"model": "gpt-6-luna",
+"cell": "self"
+},
+"8f7b482220": {
+"run_id": "v6-g2-6luna-seen-self-20261123T110007-238b7a",
+"model": "gpt-6-luna",
+"cell": "self"
+},
+"ac4eb3ad35": {
+"run_id": "v6-g2-61terra-seen-maintainer_memory_neutral-20261123T110020-0f63b1",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_memory_neutral"
+},
+"60f7d04dde": {
+"run_id": "v6-g2-6luna-seen-maintainer-20261123T110038-d56764",
+"model": "gpt-6-luna",
+"cell": "maintainer"
+},
+"e73a52c55b": {
+"run_id": "v6-g2-6luna-seen-maintainer_code-20261123T110052-637a77",
+"model": "gpt-6-luna",
+"cell": "maintainer_code"
+},
+"f0c1e2dc6e": {
+"run_id": "v6-g2-6luna-seen-maintainer_code-20261123T110115-ab2da1",
+"model": "gpt-6-luna",
+"cell": "maintainer_code"
+},
+"35f0e24972": {
+"run_id": "v6-g2-61terra-seen-self-20261123T110144-fa905d",
+"model": "gpt-6.1-terra",
+"cell": "self"
+},
+"7a4172e70b": {
+"run_id": "v6-g2-61terra-seen-maintainer_code-20261123T110210-e53528",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_code"
+},
+"9179dce101": {
+"run_id": "v6-g2-6luna-seen-peer-20261123T110229-2d164e",
+"model": "gpt-6-luna",
+"cell": "peer"
+},
+"d80f0907c1": {
+"run_id": "v6-g2-62sol-seen-self-20261123T110304-2d5dab",
+"model": "gpt-6.2-sol",
+"cell": "self"
+},
+"803a44e109": {
+"run_id": "v6-g2-61terra-seen-maintainer_code-20261123T110319-bad196",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_code"
+},
+"058ae0519c": {
+"run_id": "v6-g2-62sol-seen-self-20261123T110340-d14cb3",
+"model": "gpt-6.2-sol",
+"cell": "self"
+},
+"44c5fff994": {
+"run_id": "v6-g2-61terra-seen-maintainer_memory_neutral-20261123T110353-4d9e56",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_memory_neutral"
+},
+"6934b29f95": {
+"run_id": "v6-g2-6luna-seen-maintainer_memory_neutral-20261123T110426-a10695",
+"model": "gpt-6-luna",
+"cell": "maintainer_memory_neutral"
+},
+"a018fd27b4": {
+"run_id": "v6-g2-6luna-seen-peer-20261123T110504-1aea06",
+"model": "gpt-6-luna",
+"cell": "peer"
+},
+"7190cd227d": {
+"run_id": "v6-g2-6luna-seen-peer-20261123T110515-569d9d",
+"model": "gpt-6-luna",
+"cell": "peer"
+},
+"62a2c592c8": {
+"run_id": "v6-g2-61terra-seen-maintainer_memory_neutral-20261123T110530-5c462a",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_memory_neutral"
+},
+"674708e358": {
+"run_id": "v6-g2-6astra-seen-maintainer_code-20261123T110555-ac0f8e",
+"model": "gpt-6-astra",
+"cell": "maintainer_code"
+},
+"a7e9d1c6b2": {
+"run_id": "v6-g2-6astra-seen-maintainer_code-20261123T110616-3ceb66",
+"model": "gpt-6-astra",
+"cell": "maintainer_code"
+},
+"5991e7fe32": {
+"run_id": "v6-g2-61terra-seen-maintainer-20261123T110634-570974",
+"model": "gpt-6.1-terra",
+"cell": "maintainer"
+},
+"b70e689ca6": {
+"run_id": "v6-g2-6astra-seen-maintainer_memory_neutral-20261123T110654-fccaad",
+"model": "gpt-6-astra",
+"cell": "maintainer_memory_neutral"
+},
+"3a4cb69880": {
+"run_id": "v6-g2-61terra-seen-self-20261123T110714-ce0787",
+"model": "gpt-6.1-terra",
+"cell": "self"
+},
+"4dcc1b0a93": {
+"run_id": "v6-g2-62sol-seen-peer-20261123T110735-ec63e6",
+"model": "gpt-6.2-sol",
+"cell": "peer"
+},
+"b4f5f8e28a": {
+"run_id": "v6-g2-62sol-seen-maintainer_memory_neutral-20261123T110749-747f47",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_memory_neutral"
+},
+"ed72fd48b8": {
+"run_id": "v6-g2-6luna-seen-maintainer_memory_neutral-20261123T110801-c6e9d5",
+"model": "gpt-6-luna",
+"cell": "maintainer_memory_neutral"
+},
+"31325034c3": {
+"run_id": "v6-g2-61terra-seen-maintainer_memory_neutral-20261123T110817-a4c6cd",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_memory_neutral"
+},
+"5585cbaf27": {
+"run_id": "v6-g2-62sol-seen-maintainer_code-20261123T110835-ef0246",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_code"
+},
+"e521b05f2b": {
+"run_id": "v6-g2-6astra-seen-peer-20261123T110848-0e36b4",
+"model": "gpt-6-astra",
+"cell": "peer"
+},
+"50a14f4e5d": {
+"run_id": "v6-g2-61terra-seen-peer-20261123T110917-7a13de",
+"model": "gpt-6.1-terra",
+"cell": "peer"
+},
+"23d3013f86": {
+"run_id": "v6-g2-62sol-seen-peer-20261123T111005-ef54b1",
+"model": "gpt-6.2-sol",
+"cell": "peer"
+},
+"c4caa6fe22": {
+"run_id": "v6-g2-61terra-seen-maintainer-20261123T111017-927622",
+"model": "gpt-6.1-terra",
+"cell": "maintainer"
+},
+"1f00dc9d34": {
+"run_id": "v6-g2-6astra-seen-maintainer_code-20261123T111101-3e28dd",
+"model": "gpt-6-astra",
+"cell": "maintainer_code"
+},
+"10d45ec6aa": {
+"run_id": "v6-g2-6luna-seen-self-20261123T111122-75d205",
+"model": "gpt-6-luna",
+"cell": "self"
+},
+"f928fea64b": {
+"run_id": "v6-g2-61terra-seen-maintainer-20261123T111140-c812fc",
+"model": "gpt-6.1-terra",
+"cell": "maintainer"
+},
+"8d34e1e63d": {
+"run_id": "v6-g2-6luna-seen-self-20261123T111209-a5c823",
+"model": "gpt-6-luna",
+"cell": "self"
+},
+"fa40e74028": {
+"run_id": "v6-g2-6astra-seen-maintainer_memory_neutral-20261123T111240-d49690",
+"model": "gpt-6-astra",
+"cell": "maintainer_memory_neutral"
+},
+"04f5f7845b": {
+"run_id": "v6-g2-62sol-seen-self-20261123T111259-c960cc",
+"model": "gpt-6.2-sol",
+"cell": "self"
+},
+"9cc99327d1": {
+"run_id": "v6-g2-62sol-seen-maintainer_code-20261123T111313-3af1aa",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_code"
+},
+"a610495147": {
+"run_id": "v6-g2-62sol-seen-maintainer_memory_neutral-20261123T111328-8f79a8",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_memory_neutral"
+},
+"69f20afeb1": {
+"run_id": "v6-g2-6astra-seen-maintainer_code-20261123T111340-5d520e",
+"model": "gpt-6-astra",
+"cell": "maintainer_code"
+},
+"077dba670b": {
+"run_id": "v6-g2-62sol-seen-maintainer_code-20261123T111359-69ea84",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_code"
+},
+"7206087ab3": {
+"run_id": "v6-g2-62sol-seen-self-20261123T111413-7cb3eb",
+"model": "gpt-6.2-sol",
+"cell": "self"
+},
+"fba5074faa": {
+"run_id": "v6-g2-62sol-seen-maintainer_code-20261123T111428-ec797e",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_code"
+},
+"649dcb2055": {
+"run_id": "v6-g2-62sol-seen-maintainer-20261123T111444-2e8da3",
+"model": "gpt-6.2-sol",
+"cell": "maintainer"
+},
+"4e2bd69b12": {
+"run_id": "v6-g2-62sol-seen-maintainer_code-20261123T111456-1a5cb5",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_code"
+},
+"aad36fb24c": {
+"run_id": "v6-g2-6astra-seen-maintainer_code-20261123T111510-f75170",
+"model": "gpt-6-astra",
+"cell": "maintainer_code"
+},
+"1ab9a741e8": {
+"run_id": "v6-g2-61terra-seen-maintainer_memory_neutral-20261123T111529-664e79",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_memory_neutral"
+},
+"33eec231cf": {
+"run_id": "v6-g2-62sol-seen-maintainer-20261123T111547-2fc913",
+"model": "gpt-6.2-sol",
+"cell": "maintainer"
+},
+"8cabc98a56": {
+"run_id": "v6-g2-6luna-seen-self-20261123T111559-7503c6",
+"model": "gpt-6-luna",
+"cell": "self"
+},
+"142e1cd99a": {
+"run_id": "v6-g2-6luna-seen-self-20261123T111614-f67e35",
+"model": "gpt-6-luna",
+"cell": "self"
+},
+"3836053270": {
+"run_id": "v6-g2-6astra-seen-maintainer_code-20261123T111628-d8aceb",
+"model": "gpt-6-astra",
+"cell": "maintainer_code"
+},
+"6b7ae8c6ee": {
+"run_id": "v6-g2-6luna-seen-peer-20261123T111645-ead0bf",
+"model": "gpt-6-luna",
+"cell": "peer"
+},
+"28d1e54f67": {
+"run_id": "v6-g2-62sol-seen-peer-20261123T111702-8a9f20",
+"model": "gpt-6.2-sol",
+"cell": "peer"
+},
+"7378acadc1": {
+"run_id": "v6-g2-6luna-seen-maintainer-20261123T111716-1a1364",
+"model": "gpt-6-luna",
+"cell": "maintainer"
+},
+"dd6ff8519f": {
+"run_id": "v6-g2-6luna-seen-maintainer_code-20261123T111731-bca555",
+"model": "gpt-6-luna",
+"cell": "maintainer_code"
+},
+"6d43b618e9": {
+"run_id": "v6-g2-61terra-seen-maintainer-20261123T111746-8670a1",
+"model": "gpt-6.1-terra",
+"cell": "maintainer"
+},
+"671cf339e5": {
+"run_id": "v6-g2-6astra-seen-self-20261123T111805-3df2cd",
+"model": "gpt-6-astra",
+"cell": "self"
+},
+"f3b5ddfdfa": {
+"run_id": "v6-g2-62sol-seen-maintainer_memory_neutral-20261123T111844-6b9b61",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_memory_neutral"
+},
+"f734b90867": {
+"run_id": "v6-g2-62sol-seen-peer-20261123T111855-63b32d",
+"model": "gpt-6.2-sol",
+"cell": "peer"
+},
+"ead6eff60b": {
+"run_id": "v6-g2-6astra-seen-maintainer_code-20261123T111909-dd5df5",
+"model": "gpt-6-astra",
+"cell": "maintainer_code"
+},
+"d0cffa9f46": {
+"run_id": "v6-g2-62sol-seen-maintainer_memory_neutral-20261123T111932-ff91a0",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_memory_neutral"
+},
+"ecb2ba17ab": {
+"run_id": "v6-g2-62sol-seen-self-20261123T111944-f44d1e",
+"model": "gpt-6.2-sol",
+"cell": "self"
+},
+"cc6be4636f": {
+"run_id": "v6-g2-61terra-seen-self-20261123T111956-426138",
+"model": "gpt-6.1-terra",
+"cell": "self"
+},
+"7fa2c8c09b": {
+"run_id": "v6-g2-6astra-seen-self-20261123T112022-3acda5",
+"model": "gpt-6-astra",
+"cell": "self"
+},
+"5c81b47acb": {
+"run_id": "v6-g2-6astra-seen-self-20261123T112041-a2bba1",
+"model": "gpt-6-astra",
+"cell": "self"
+},
+"c286d7df34": {
+"run_id": "v6-g2-62sol-seen-maintainer-20261123T112113-36495d",
+"model": "gpt-6.2-sol",
+"cell": "maintainer"
+},
+"cc8804ba1f": {
+"run_id": "v6-g2-6astra-seen-peer-20261123T112128-08c9d0",
+"model": "gpt-6-astra",
+"cell": "peer"
+},
+"0ef2c74bab": {
+"run_id": "v6-g2-6astra-seen-maintainer-20261123T112147-2c927a",
+"model": "gpt-6-astra",
+"cell": "maintainer"
+},
+"de966e8e3c": {
+"run_id": "v6-g2-6astra-seen-maintainer_code-20261123T112205-e7dab4",
+"model": "gpt-6-astra",
+"cell": "maintainer_code"
+},
+"0e122462e2": {
+"run_id": "v6-g2-62sol-seen-maintainer-20261123T112225-4e8907",
+"model": "gpt-6.2-sol",
+"cell": "maintainer"
+},
+"b98fcd2624": {
+"run_id": "v6-g2-61terra-seen-self-20261123T112238-c7d175",
+"model": "gpt-6.1-terra",
+"cell": "self"
+},
+"16d95ea203": {
+"run_id": "v6-g2-61terra-seen-self-20261123T112304-518e49",
+"model": "gpt-6.1-terra",
+"cell": "self"
+},
+"3e29d9426b": {
+"run_id": "v6-g2-6luna-seen-maintainer-20261123T112326-8aa271",
+"model": "gpt-6-luna",
+"cell": "maintainer"
+},
+"23dfb3bb94": {
+"run_id": "v6-g2-6luna-seen-maintainer_memory_neutral-20261123T112339-12c7c1",
+"model": "gpt-6-luna",
+"cell": "maintainer_memory_neutral"
+},
+"b71630f658": {
+"run_id": "v6-g2-61terra-seen-peer-20261123T112355-7273c2",
+"model": "gpt-6.1-terra",
+"cell": "peer"
+},
+"d8a7f7ac03": {
+"run_id": "v6-g2-62sol-seen-peer-20261123T112432-4568c6",
+"model": "gpt-6.2-sol",
+"cell": "peer"
+},
+"c53a502d1e": {
+"run_id": "v6-g2-6luna-seen-peer-20261123T112445-1bce0a",
+"model": "gpt-6-luna",
+"cell": "peer"
+},
+"9293c160ae": {
+"run_id": "v6-g2-6astra-seen-maintainer_code-20261123T112457-bac843",
+"model": "gpt-6-astra",
+"cell": "maintainer_code"
+},
+"44055cc8e6": {
+"run_id": "v6-g2-6luna-seen-maintainer-20261123T112517-417542",
+"model": "gpt-6-luna",
+"cell": "maintainer"
+},
+"c6e015fbcf": {
+"run_id": "v6-g2-62sol-seen-maintainer_code-20261123T112533-88d90b",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_code"
+},
+"246a45d4d9": {
+"run_id": "v6-g2-6astra-seen-self-20261123T112546-f41c86",
+"model": "gpt-6-astra",
+"cell": "self"
+},
+"47cfee4467": {
+"run_id": "v6-g2-6astra-seen-maintainer_memory_neutral-20261123T112630-ce1389",
+"model": "gpt-6-astra",
+"cell": "maintainer_memory_neutral"
+},
+"693d607e1f": {
+"run_id": "v6-g2-62sol-seen-maintainer_code-20261123T112649-5fa5a3",
+"model": "gpt-6.2-sol",
+"cell": "maintainer_code"
+},
+"96176037c3": {
+"run_id": "v6-g2-6astra-seen-maintainer_code-20261123T112701-fde884",
+"model": "gpt-6-astra",
+"cell": "maintainer_code"
+},
+"f3ea48df09": {
+"run_id": "v6-g2-6luna-seen-maintainer_memory_neutral-20261123T112724-8e0cba",
+"model": "gpt-6-luna",
+"cell": "maintainer_memory_neutral"
+},
+"14d866b1c8": {
+"run_id": "v6-g2-6luna-seen-peer-20261123T112736-fc3d26",
+"model": "gpt-6-luna",
+"cell": "peer"
+},
+"6af48cf6e3": {
+"run_id": "v6-g2-6astra-seen-maintainer_code-20261123T112751-5b39e8",
+"model": "gpt-6-astra",
+"cell": "maintainer_code"
+},
+"fd455f7c5c": {
+"run_id": "v6-g2-6astra-seen-peer-20261123T112811-d61dda",
+"model": "gpt-6-astra",
+"cell": "peer"
+},
+"de26e3d23b": {
+"run_id": "v6-g2-62sol-seen-maintainer-20261123T112907-b5b617",
+"model": "gpt-6.2-sol",
+"cell": "maintainer"
+},
+"3bb0969863": {
+"run_id": "v6-g2-6astra-seen-self-20261123T112919-b7065c",
+"model": "gpt-6-astra",
+"cell": "self"
+},
+"787fb9220b": {
+"run_id": "v6-g2-62sol-seen-peer-20261123T112936-9a0d29",
+"model": "gpt-6.2-sol",
+"cell": "peer"
+},
+"578422e4c1": {
+"run_id": "v6-g2-6luna-seen-maintainer_code-20261123T112949-b6ecaf",
+"model": "gpt-6-luna",
+"cell": "maintainer_code"
+},
+"4ab2da5be2": {
+"run_id": "v6-g2-62sol-seen-peer-20261123T113025-b46edc",
+"model": "gpt-6.2-sol",
+"cell": "peer"
+},
+"bbe917c88f": {
+"run_id": "v6-g2-6luna-seen-maintainer-20261123T113039-d60e2c",
+"model": "gpt-6-luna",
+"cell": "maintainer"
+},
+"f2cbfd9947": {
+"run_id": "v6-g2-61terra-seen-maintainer_code-20261123T113114-55d0e2",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_code"
+},
+"7faece175d": {
+"run_id": "v6-g2-61terra-seen-maintainer_code-20261123T113207-b80e10",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_code"
+},
+"145745d7b3": {
+"run_id": "v6-g2-61terra-seen-maintainer_memory_neutral-20261123T113305-7f32cb",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_memory_neutral"
+},
+"cde8fe7675": {
+"run_id": "v6-g2-6luna-seen-peer-20261123T113324-4cbe97",
+"model": "gpt-6-luna",
+"cell": "peer"
+},
+"2d086dbdd3": {
+"run_id": "v6-g2-61terra-seen-peer-20261123T113339-51f459",
+"model": "gpt-6.1-terra",
+"cell": "peer"
+},
+"974b9114b3": {
+"run_id": "v6-g2-61terra-seen-maintainer_code-20261123T113439-1273b9",
+"model": "gpt-6.1-terra",
+"cell": "maintainer_code"
+},
+"3f6d1adc81": {
+"run_id": "v6-g2-6astra-seen-maintainer-20261123T113507-ef7ae7",
+"model": "gpt-6-astra",
+"cell": "maintainer"
+},
+"f36ba3d0be": {
+"run_id": "v6-g2-6astra-seen-maintainer-20261123T113527-fc780d",
+"model": "gpt-6-astra",
+"cell": "maintainer"
+},
+"0ea4723c7d": {
+"run_id": "v6-g2-61terra-seen-peer-20261123T113545-df799a",
+"model": "gpt-6.1-terra",
+"cell": "peer"
+},
+"d95a7366f8": {
+"run_id": "v6-g2-6luna-seen-maintainer_code-20261123T113603-d5e9f2",
+"model": "gpt-6-luna",
+"cell": "maintainer_code"
+},
+"0b3e45fd22": {
+"run_id": "v6-g2-6astra-seen-maintainer_code-20261123T113617-dce8f9",
+"model": "gpt-6-astra",
+"cell": "maintainer_code"
+},
+"109cc64e43": {
+"run_id": "v6-g2-6luna-seen-maintainer-20261123T113638-0f411d",
+"model": "gpt-6-luna",
+"cell": "maintainer"
+},
+"f2b70d64ce": {
+"run_id": "v6-g2-6astra-seen-peer-20261123T113651-1ade15",
+"model": "gpt-6-astra",
+"cell": "peer"
+},
+"fd92e99869": {
+"run_id": "v6-g2-6luna-seen-maintainer_memory_neutral-20261123T113725-0d5558",
+"model": "gpt-6-luna",
+"cell": "maintainer_memory_neutral"
+},
+"9acd777206": {
+"run_id": "v6-g2-61terra-seen-self-20261123T113737-c25ddf",
+"model": "gpt-6.1-terra",
+"cell": "self"
+},
+"e73edec0c3": {
+"run_id": "v6-g2-6luna-seen-maintainer-20261123T113757-61d0a6",
+"model": "gpt-6-luna",
+"cell": "maintainer"
+}
+},
+"overlap": [
+"009438b6d7",
+"091ac64ca1",
+"0ea4723c7d",
+"1252617caa",
+"15252a2a44",
+"1c187ea7dd",
+"1d16c0645a",
+"20baa39b5d",
+"28d1e54f67",
+"2e30775ce6",
+"385fd939c3",
+"3912f4d3e3",
+"41ffa44935",
+"465b5e09e6",
+"52ddd29f12",
+"5347b56255",
+"938a57399e",
+"9c7f500f14",
+"a43a31dab1",
+"a950977534",
+"b24db017ee",
+"b83b1eaec4",
+"c56542c9c4",
+"cf335087b7",
+"d3aa636ee8",
+"d3ae981ea7",
+"d80f0907c1",
+"dd6ff8519f",
+"ddc4580606",
+"df7f7012b8",
+"e521b05f2b",
+"e73a52c55b",
+"e968222e8e",
+"ede2517242",
+"eef711db47",
+"f02ce07cb3",
+"f15fe180fe",
+"f6e50fb03c",
+"fd455f7c5c",
+"fd92e99869"
+]
+}
