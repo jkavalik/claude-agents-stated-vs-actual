@@ -1,0 +1,9 @@
+{
+ "files": {
+  "pytest.ini": "6c6ccf864e8f2d2e0223ee8e39bfde660c12435aa37d81e2b14000a6bee15003",
+  "README.md": "cb29a9ff12403bb5a437f22a1779730bad31a04a26af4ac57e079f9c03baca52",
+  "app/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "app/calc.py": "1924695e457a8b47f95cbc336bb9d7f30346eaf4f9287e74aa469d7b67efc477",
+  "tests/test_calc.py": "871bd4ac56235c92ce9728d1f542b2d6830873f3461ebd27052883fb719d7fa8"
+ }
+}

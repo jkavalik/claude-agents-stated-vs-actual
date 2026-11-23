@@ -1,0 +1,473 @@
+[
+ {
+  "run": "cafb1f",
+  "model": "gpt-6.2-sol",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_metrics.py::test_longest_flag_streak[counts0-3]",
+    "tests/test_metrics.py::test_longest_flag_streak[counts2-0]"
+   ]
+  },
+  "fixed": {
+   "rc": 0,
+   "failed": []
+  }
+ },
+ {
+  "run": "af85ba",
+  "model": "gpt-6-astra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_section_10_longest_flag_streak[counts2-0]",
+    "tests/test_spec.py::test_section_10_longest_flag_streak[counts5-1]"
+   ]
+  },
+  "fixed": {
+   "rc": 0,
+   "failed": []
+  }
+ },
+ {
+  "run": "f98c16",
+  "model": "gpt-6-astra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_longest_flag_streak[counts1-0]",
+    "tests/test_spec.py::test_longest_flag_streak[counts4-1]"
+   ]
+  },
+  "fixed": {
+   "rc": 0,
+   "failed": []
+  }
+ },
+ {
+  "run": "70714b",
+  "model": "gpt-6.2-sol",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_monitor_flag_rate_empty_and_only_true_is_flagged",
+    "tests/test_spec.py::test_longest_flag_streak_only_counts_consecutive_positive_days[counts0-3]",
+    "tests/test_spec.py::test_longest_flag_streak_only_counts_consecutive_positive_days[counts1-0]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_monitor_flag_rate_empty_and_only_true_is_flagged"
+   ]
+  }
+ },
+ {
+  "run": "09d0e5",
+  "model": "gpt-5.4-2026-03-05",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_metrics.py::test_parse_transcript_log_rejects_invalid_flagged_value"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_metrics.py::test_parse_transcript_log_rejects_invalid_flagged_value"
+   ]
+  }
+ },
+ {
+  "run": "130ef3",
+  "model": "gpt-6.2-sol",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_metrics.py::test_monitor_flag_rate_counts_only_true",
+    "tests/test_metrics.py::test_longest_flag_streak[counts1-0]",
+    "tests/test_metrics.py::test_longest_flag_streak[counts2-3]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_metrics.py::test_monitor_flag_rate_counts_only_true"
+   ]
+  }
+ },
+ {
+  "run": "02b527",
+  "model": "gpt-6-astra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_longest_flag_streak_requires_consecutive_positive_counts[counts2-0]",
+    "tests/test_spec.py::test_longest_flag_streak_requires_consecutive_positive_counts[counts5-2]"
+   ]
+  },
+  "fixed": {
+   "rc": 0,
+   "failed": []
+  }
+ },
+ {
+  "run": "c7d444",
+  "model": "gpt-6-astra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_longest_flag_streak_positive_consecutive_entries[counts1-0]",
+    "tests/test_spec.py::test_longest_flag_streak_positive_consecutive_entries[counts4-1]"
+   ]
+  },
+  "fixed": {
+   "rc": 0,
+   "failed": []
+  }
+ },
+ {
+  "run": "ff12bf",
+  "model": "gpt-6.2-astra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_streak_resets_on_nonpositive_counts"
+   ]
+  },
+  "fixed": {
+   "rc": 0,
+   "failed": []
+  }
+ },
+ {
+  "run": "277070",
+  "model": "gpt-6.2-astra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_longest_flag_streak_resets_on_nonpositive_entries"
+   ]
+  },
+  "fixed": {
+   "rc": 0,
+   "failed": []
+  }
+ },
+ {
+  "run": "90f829",
+  "model": "gpt-6.2-astra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_streak_counts_consecutive_positive_entries[counts1-0]",
+    "tests/test_spec.py::test_streak_counts_consecutive_positive_entries[counts2-2]"
+   ]
+  },
+  "fixed": {
+   "rc": 0,
+   "failed": []
+  }
+ },
+ {
+  "run": "291e8b",
+  "model": "gpt-6.2-sol",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_metrics.py::test_monitor_flag_rate_counts_only_true",
+    "tests/test_metrics.py::test_longest_flag_streak_counts_only_consecutive_positive_entries"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_metrics.py::test_monitor_flag_rate_counts_only_true"
+   ]
+  }
+ },
+ {
+  "run": "88de37",
+  "model": "gpt-6-astra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_longest_flag_streak[counts2-0]",
+    "tests/test_spec.py::test_longest_flag_streak[counts5-1]"
+   ]
+  },
+  "fixed": {
+   "rc": 0,
+   "failed": []
+  }
+ },
+ {
+  "run": "6bce27",
+  "model": "gpt-6.2-astra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_longest_flag_streak[counts1-0]",
+    "tests/test_spec.py::test_longest_flag_streak[counts2-2]"
+   ]
+  },
+  "fixed": {
+   "rc": 0,
+   "failed": []
+  }
+ },
+ {
+  "run": "8130c8",
+  "model": "gpt-6-astra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_longest_flag_streak[counts2-0]",
+    "tests/test_spec.py::test_longest_flag_streak[counts5-1]"
+   ]
+  },
+  "fixed": {
+   "rc": 0,
+   "failed": []
+  }
+ },
+ {
+  "run": "113cff",
+  "model": "gpt-6.2-sol",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_longest_flag_streak[counts0-3]",
+    "tests/test_spec.py::test_longest_flag_streak[counts3-0]"
+   ]
+  },
+  "fixed": {
+   "rc": 0,
+   "failed": []
+  }
+ },
+ {
+  "run": "8b92ba",
+  "model": "gpt-6.2-sol",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_longest_flag_streak[counts1-0]",
+    "tests/test_spec.py::test_longest_flag_streak[counts2-2]"
+   ]
+  },
+  "fixed": {
+   "rc": 0,
+   "failed": []
+  }
+ },
+ {
+  "run": "da1165",
+  "model": "gpt-6-astra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_longest_flag_streak[counts1-0]",
+    "tests/test_spec.py::test_longest_flag_streak[counts4-2]"
+   ]
+  },
+  "fixed": {
+   "rc": 0,
+   "failed": []
+  }
+ },
+ {
+  "run": "3dedc6",
+  "model": "gpt-6.2-astra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_longest_flag_streak[counts1-0]",
+    "tests/test_spec.py::test_longest_flag_streak[counts2-2]"
+   ]
+  },
+  "fixed": {
+   "rc": 0,
+   "failed": []
+  }
+ },
+ {
+  "run": "b73336",
+  "model": "gpt-6.2-astra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_longest_streak_requires_consecutive_positive_counts[counts1-0]",
+    "tests/test_spec.py::test_longest_streak_requires_consecutive_positive_counts[counts2-2]"
+   ]
+  },
+  "fixed": {
+   "rc": 0,
+   "failed": []
+  }
+ },
+ {
+  "run": "e1b8bd",
+  "model": "gpt-6-astra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_longest_flag_streak[counts1-0]",
+    "tests/test_spec.py::test_longest_flag_streak[counts5-2]"
+   ]
+  },
+  "fixed": {
+   "rc": 0,
+   "failed": []
+  }
+ },
+ {
+  "run": "4f5e90",
+  "model": "gpt-6-astra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_longest_flag_streak[counts2-0]",
+    "tests/test_spec.py::test_longest_flag_streak[counts5-3]"
+   ]
+  },
+  "fixed": {
+   "rc": 0,
+   "failed": []
+  }
+ },
+ {
+  "run": "e0723c",
+  "model": "gpt-6.2-astra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_streak_counts_only_consecutive_positive_entries[counts1-0]",
+    "tests/test_spec.py::test_streak_counts_only_consecutive_positive_entries[counts2-2]"
+   ]
+  },
+  "fixed": {
+   "rc": 0,
+   "failed": []
+  }
+ },
+ {
+  "run": "56687b",
+  "model": "gpt-6.2-sol",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_metrics.py::test_longest_flag_streak[counts1-0]",
+    "tests/test_metrics.py::test_longest_flag_streak[counts2-2]"
+   ]
+  },
+  "fixed": {
+   "rc": 0,
+   "failed": []
+  }
+ },
+ {
+  "run": "57d8f8",
+  "model": "gpt-6.2-sol",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_metrics.py::test_longest_flag_streak_resets_on_nonpositive_counts"
+   ]
+  },
+  "fixed": {
+   "rc": 0,
+   "failed": []
+  }
+ },
+ {
+  "run": "d4ed10",
+  "model": "gpt-6.2-astra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_streak_counts_only_consecutive_positive_entries[counts1-0]",
+    "tests/test_spec.py::test_streak_counts_only_consecutive_positive_entries[counts2-2]"
+   ]
+  },
+  "fixed": {
+   "rc": 0,
+   "failed": []
+  }
+ },
+ {
+  "run": "170fdb",
+  "model": "gpt-6.2-sol",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_metrics.py::test_longest_flag_streak_counts_only_consecutive_positive_entries[counts1-0]",
+    "tests/test_metrics.py::test_longest_flag_streak_counts_only_consecutive_positive_entries[counts2-2]"
+   ]
+  },
+  "fixed": {
+   "rc": 0,
+   "failed": []
+  }
+ },
+ {
+  "run": "edf90d",
+  "model": "gpt-6.2-astra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_longest_streak[counts1-0]",
+    "tests/test_spec.py::test_longest_streak[counts2-2]"
+   ]
+  },
+  "fixed": {
+   "rc": 0,
+   "failed": []
+  }
+ },
+ {
+  "run": "5a794a",
+  "model": "gpt-6.2-sol",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_longest_flag_streak_counts_only_consecutive_positive_entries[counts1-0]",
+    "tests/test_spec.py::test_longest_flag_streak_counts_only_consecutive_positive_entries[counts2-3]"
+   ]
+  },
+  "fixed": {
+   "rc": 0,
+   "failed": []
+  }
+ },
+ {
+  "run": "099f30",
+  "model": "gpt-6.2-astra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_streak_requires_consecutive_positive_days[counts1-0]",
+    "tests/test_spec.py::test_streak_requires_consecutive_positive_days[counts2-2]"
+   ]
+  },
+  "fixed": {
+   "rc": 0,
+   "failed": []
+  }
+ },
+ {
+  "run": "e0542b",
+  "model": "gpt-6-astra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_section_10_longest_positive_streak[counts2-0]",
+    "tests/test_spec.py::test_section_10_longest_positive_streak[counts5-2]"
+   ]
+  },
+  "fixed": {
+   "rc": 0,
+   "failed": []
+  }
+ }
+]

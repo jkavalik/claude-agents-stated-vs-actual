@@ -1,0 +1,30 @@
+[
+ {
+  "model": "gpt-6.1-terra",
+  "ok": true,
+  "resolved_model": "gpt-6.1-terra",
+  "status": "completed",
+  "text": "ok",
+  "summary_items": 0,
+  "usage": {
+   "input": 13,
+   "output": 5,
+   "reasoning": 0
+  },
+  "cost_usd": 3.8e-05
+ },
+ {
+  "model": "gpt-6-luna",
+  "ok": true,
+  "resolved_model": "gpt-6-luna",
+  "status": "completed",
+  "text": "ok",
+  "summary_items": 0,
+  "usage": {
+   "input": 13,
+   "output": 5,
+   "reasoning": 0
+  },
+  "cost_usd": 4e-06
+ }
+]

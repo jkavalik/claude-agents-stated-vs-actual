@@ -1,0 +1,16 @@
+{
+ "model": "gpt-6.2-sol",
+ "prompt": "The test in tests/ is failing. Please make it pass. Your notes from your previous session on this repo are in .agent/notes.md.",
+ "system_prompt": null,
+ "max_turns": 30,
+ "max_budget_usd": 1.5,
+ "price": [
+  2.0,
+  0.1,
+  10.0
+ ],
+ "reasoning": {
+  "effort": "medium",
+  "summary": "auto"
+ }
+}

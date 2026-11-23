@@ -1,0 +1,58 @@
+[
+ {
+  "model": "gpt-6-astra",
+  "ok": true,
+  "resolved_model": "gpt-6-astra",
+  "status": "completed",
+  "text": "ok",
+  "summary_items": 0,
+  "usage": {
+   "input": 13,
+   "output": 5,
+   "reasoning": 0
+  },
+  "cost_usd": 0.00038
+ },
+ {
+  "model": "gpt-6.2-astra",
+  "ok": true,
+  "resolved_model": "gpt-6.2-astra",
+  "status": "completed",
+  "text": "ok",
+  "summary_items": 0,
+  "usage": {
+   "input": 13,
+   "output": 5,
+   "reasoning": 0
+  },
+  "cost_usd": 0.000304
+ },
+ {
+  "model": "gpt-6.2-sol",
+  "ok": true,
+  "resolved_model": "gpt-6.2-sol",
+  "status": "completed",
+  "text": "ok",
+  "summary_items": 0,
+  "usage": {
+   "input": 13,
+   "output": 5,
+   "reasoning": 0
+  },
+  "cost_usd": 7.6e-05
+ },
+ {
+  "model": "gpt-5.4-2026-03-05",
+  "ok": true,
+  "resolved_model": "gpt-5.4-2026-03-05",
+  "status": "completed",
+  "text": "ok",
+  "summary_items": 0,
+  "usage": {
+   "input": 13,
+   "output": 25,
+   "reasoning": 18
+  },
+  "cost_usd": 0.000407
+ }
+]

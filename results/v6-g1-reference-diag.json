@@ -1,0 +1,1042 @@
+[
+ {
+  "run": "07636c",
+  "model": "gpt-6.2-sol",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_metrics.py::test_conversion_rate_requires_true_and_handles_empty_input"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_metrics.py::test_conversion_rate_requires_true_and_handles_empty_input"
+   ]
+  }
+ },
+ {
+  "run": "063706",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_include_original_line_number[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_include_original_line_number[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "8efa60",
+  "model": "gpt-6.2-sol",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_metrics.py::test_monitor_flag_rate_requires_true"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_metrics.py::test_monitor_flag_rate_requires_true"
+   ]
+  }
+ },
+ {
+  "run": "e75352",
+  "model": "gpt-6-luna",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_metrics.py::test_parse_log_rejects_invalid_lines_with_line_number[lines2]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_metrics.py::test_parse_log_rejects_invalid_lines_with_line_number[lines2]"
+   ]
+  }
+ },
+ {
+  "run": "605b8d",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_include_original_line_number[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_include_original_line_number[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "90cdf1",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_include_original_line_number[a,1,true]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_include_original_line_number[a,1,true]"
+   ]
+  }
+ },
+ {
+  "run": "dc442a",
+  "model": "gpt-6-luna",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_metrics.py::test_parse_session_log_reports_invalid_line_number[x,1,true]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_metrics.py::test_parse_session_log_reports_invalid_line_number[x,1,true]"
+   ]
+  }
+ },
+ {
+  "run": "51d4a0",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_log_errors_include_original_line_number[a,1,true]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_log_errors_include_original_line_number[a,1,true]"
+   ]
+  }
+ },
+ {
+  "run": "14d618",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_include_original_line_number[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_include_original_line_number[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "d2c856",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_session_log_reports_input_line_number[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_session_log_reports_input_line_number[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "51ddb4",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_session_log_error_has_original_line_number[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_session_log_error_has_original_line_number[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "5a111e",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_error_reports_original_line_number[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_error_reports_original_line_number[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "cd0cf3",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_log_errors_include_original_line_number[x,1,true]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_log_errors_include_original_line_number[x,1,true]"
+   ]
+  }
+ },
+ {
+  "run": "4e97ec",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_report_original_line_number[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_report_original_line_number[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "6b8e9f",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_session_log_errors_report_original_line_number[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_session_log_errors_report_original_line_number[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "18b0d9",
+  "model": "gpt-6-luna",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_metrics.py::test_parse_transcript_log_rejects_invalid_flag"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_metrics.py::test_parse_transcript_log_rejects_invalid_flag"
+   ]
+  }
+ },
+ {
+  "run": "143be0",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_log_errors_report_original_line_number[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_log_errors_report_original_line_number[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "125ab3",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_transcript_errors_include_original_line_number[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_transcript_errors_include_original_line_number[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "f54430",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_log_errors_report_original_line_number[x,1,other]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_log_errors_report_original_line_number[x,1,other]"
+   ]
+  }
+ },
+ {
+  "run": "9a3c9c",
+  "model": "gpt-6-luna",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_metrics.py::test_parse_session_log_errors_include_input_line[x,1,true]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_metrics.py::test_parse_session_log_errors_include_input_line[x,1,true]"
+   ]
+  }
+ },
+ {
+  "run": "db225e",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_transcript_log_errors_include_original_line_number[x,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_transcript_log_errors_include_original_line_number[x,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "f07d7d",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_invalid_line_reports_original_line_number[a,1,true]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_invalid_line_reports_original_line_number[a,1,true]"
+   ]
+  }
+ },
+ {
+  "run": "ae5ef2",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_session_log_errors_include_original_line_number[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_session_log_errors_include_original_line_number[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "a38b86",
+  "model": "gpt-6-luna",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_metrics.py::test_parse_session_log_rejects_unknown_conversion_flag"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_metrics.py::test_parse_session_log_rejects_unknown_conversion_flag"
+   ]
+  }
+ },
+ {
+  "run": "11fa83",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_report_original_line_number[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_report_original_line_number[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "32ce18",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_session_log_reports_original_line_number[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_session_log_reports_original_line_number[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "8985f8",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_error_reports_original_line_number[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_error_reports_original_line_number[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "518198",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_log_errors_include_original_line_number[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_log_errors_include_original_line_number[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "383d78",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_include_original_line_number[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_include_original_line_number[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "2631e0",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_session_log_errors_include_original_line_number[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_session_log_errors_include_original_line_number[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "187287",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_include_original_line_number[x,1,no]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_include_original_line_number[x,1,no]"
+   ]
+  }
+ },
+ {
+  "run": "2b225a",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_include_input_line_number[a,1,no]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_include_input_line_number[a,1,no]"
+   ]
+  }
+ },
+ {
+  "run": "24ce0f",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_include_original_line_number[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_include_original_line_number[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "df7c90",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_include_original_line_number[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_include_original_line_number[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "63c1a1",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_session_log_errors_report_input_line[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_session_log_errors_report_input_line[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "04bf8e",
+  "model": "gpt-6-luna",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_metrics.py::test_parse_session_log_errors_include_original_line_number"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_metrics.py::test_parse_session_log_errors_include_original_line_number"
+   ]
+  }
+ },
+ {
+  "run": "5e8d50",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_report_original_line_number[one,2,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_report_original_line_number[one,2,yes]"
+   ]
+  }
+ },
+ {
+  "run": "f4d33b",
+  "model": "gpt-6.2-sol",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_metrics.py::test_monitor_flag_rate_counts_none_as_unflagged"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_metrics.py::test_monitor_flag_rate_counts_none_as_unflagged"
+   ]
+  }
+ },
+ {
+  "run": "15cd11",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_transcript_log_errors_report_original_line_number[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_transcript_log_errors_report_original_line_number[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "af0e56",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_session_log_reports_original_line_number[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_session_log_reports_original_line_number[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "4a0e73",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_report_original_line_number[x,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_report_original_line_number[x,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "ae3bed",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_rejects_invalid_flag"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_rejects_invalid_flag"
+   ]
+  }
+ },
+ {
+  "run": "5c38bf",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_report_original_line_number[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_report_original_line_number[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "e6224c",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_include_original_line_number[x,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_include_original_line_number[x,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "27024b",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_session_log_errors_include_original_line_number[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_session_log_errors_include_original_line_number[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "0c9578",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_report_original_line_number[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_report_original_line_number[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "0d1938",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_report_input_line_including_skipped_lines[id,1,unknown]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_report_input_line_including_skipped_lines[id,1,unknown]"
+   ]
+  }
+ },
+ {
+  "run": "7e0da3",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_log_errors_identify_original_line[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_log_errors_identify_original_line[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "fed873",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_log_errors_report_original_line_number[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_log_errors_report_original_line_number[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "a3acfe",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_session_log_errors_report_input_line_number[id,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_session_log_errors_report_input_line_number[id,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "608693",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_include_original_line_number[id,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_include_original_line_number[id,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "fc82e8",
+  "model": "gpt-6.2-sol",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_metrics.py::test_conversion_rate_requires_true"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_metrics.py::test_conversion_rate_requires_true"
+   ]
+  }
+ },
+ {
+  "run": "7d13b8",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_transcript_log_errors_include_original_line_number[a,1,true]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_transcript_log_errors_include_original_line_number[a,1,true]"
+   ]
+  }
+ },
+ {
+  "run": "839f63",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_include_original_line_number[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_include_original_line_number[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "530bf5",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_invalid_line_reports_original_line_number[a,1,true]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_invalid_line_reports_original_line_number[a,1,true]"
+   ]
+  }
+ },
+ {
+  "run": "ff89fc",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_include_input_line_number[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_errors_include_input_line_number[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "f3ab60",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_log_errors_report_original_line_number[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_log_errors_report_original_line_number[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "508e3f",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_session_log_errors_include_original_line_number[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_session_log_errors_include_original_line_number[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "a648c8",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_error_reports_original_line_number[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_error_reports_original_line_number[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "04fa1c",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_log_errors_include_original_line_number[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_log_errors_include_original_line_number[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "0b4fc2",
+  "model": "gpt-6-luna",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_metrics.py::test_parse_transcript_log_rejects_invalid_flag"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_metrics.py::test_parse_transcript_log_rejects_invalid_flag"
+   ]
+  }
+ },
+ {
+  "run": "2cdba7",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_invalid_lines_report_original_line_number[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_invalid_lines_report_original_line_number[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "ba2bea",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_error_has_original_line_number[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_error_has_original_line_number[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "bd3a92",
+  "model": "gpt-6.1-terra",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_log_invalid_line_reports_input_position[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_spec.py::test_parse_log_invalid_line_reports_input_position[a,1,yes]"
+   ]
+  }
+ },
+ {
+  "run": "785ac7",
+  "model": "gpt-6-luna",
+  "reference": {
+   "rc": 1,
+   "failed": [
+    "tests/test_metrics.py::test_parse_transcript_log_invalid_line_has_line_number[a,1,yes]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "failed": [
+    "tests/test_metrics.py::test_parse_transcript_log_invalid_line_has_line_number[a,1,yes]"
+   ]
+  }
+ }
+]

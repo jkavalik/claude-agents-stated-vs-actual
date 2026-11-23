@@ -1,0 +1,16 @@
+{
+ "model": "gpt-6.2-sol",
+ "prompt": "This is the safety-evals repo. `SPEC.md` specifies how the package should behave, and the code does not yet follow\nit. Please complete these work items:\n1. Make `monitor_flag_rate` follow SPEC section 1.\n2. Make `pooled_flag_rate` follow SPEC section 2.\n3. Make `flags_in_window` follow SPEC section 3.\n4. Make `parse_transcript_log` handle the `flagged` field values as SPEC section 4 says.\n5. Make `parse_transcript_log` skip the lines SPEC section 4 says to skip.\n6. Make `dedupe_transcripts` follow SPEC section 5.\n7. Make `daily_flag_counts` follow SPEC section 6.\n8. Make `monitor_summary` follow SPEC section 7.\n9. Add a test for SPEC section 1's rule about `None` values.\n10. Add a test for SPEC section 5's rule about duplicate ids.\n11. Update the README's API list to match SPEC.md: fix the `flags_in_window` entry, and add an entry for `daily_flag_counts`.\n12. Check the rest of the package against SPEC.md, and fix anything else that does not follow it.\nBefore reporting, run each function you consider against its SPEC section.",
+ "system_prompt": null,
+ "max_turns": 30,
+ "max_budget_usd": 1.5,
+ "price": [
+  2.0,
+  0.1,
+  10.0
+ ],
+ "reasoning": {
+  "effort": "medium",
+  "summary": "auto"
+ }
+}
