@@ -243,5 +243,22 @@ reproduced. The findings below were each checked against the files before changi
 - **Not applied:** the reviewer's overlap-agreement finding (39/40 for conflict) was computed from
   `results/v6-g2-handclass/`. That is a different, earlier label set, not the one this report uses. On the report's
   labels the 40-run overlap agrees 40/40, now verifiable from `results/v6-g2-blind/`.
-- **Dashboard figure:** the OpenAI usage dashboard's total for the whole round was not available when this was written.
-  The per-model reconciliation through G0b is in Addendum 2.
+- **Dashboard figure** (added 2026-11-23, from the OpenAI usage dashboard, organization spend Nov 18–23, shown by the
+  human): $57.95 in total.
+
+  | model | dashboard | our records (list) | ratio |
+  |---|---|---|---|
+  | gpt-6-astra | $34.79 | $32.83 | 1.06 |
+  | gpt-6.2-astra | $9.53 | $12.09 | 0.79 |
+  | gpt-6.2-sol | $6.78 | $6.50 | 1.04 |
+  | gpt-6.1-terra | $3.29 | $3.18 | 1.04 |
+  | gpt-5.4 | $2.82 | $2.81 | 1.00 |
+  | gpt-6-luna | $0.61 | $0.42 | 1.44 |
+  | gpt-6.1-sol | $0.12 | none | not ours |
+
+  Our records include the preflights and the relabel.
+  - The GPT-6 family is again billed somewhat above list, and GPT-5.4 at list, as in the Addendum 2 reconciliation.
+  - gpt-6.2-astra is below our records, most likely because G1x (run the same day) was not yet fully posted.
+  - Luna's excess ($0.19) includes the abandoned G0b request (about $0.06); the rest is unexplained.
+  - gpt-6.1-sol was not used by any v6 batch; the dashboard covers the whole organization.
+  - Once posting completes, actual v6 spend should be about $60, below the guard's conservative estimate of $64.60.
