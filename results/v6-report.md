@@ -214,8 +214,10 @@ the only correction.
 - A minimal harness, not the vendors' own agents.
 - Aliased model IDs.
 - Text measures read from visible text only (no hidden reasoning).
-- Classification by Claude subagents, corroborated by one OpenAI model. No human labels yet: a 10-run sample is in
-  `results/v6-xlabel/human-sample.md`.
+- Classification by Claude subagents, corroborated by one OpenAI model. The human check is limited: the human read a
+  random sample of 10 silent deferrals (`results/v6-xlabel/human-sample.md`; 7 Luna, 3 Terra) on 2026-11-23 and found
+  them consistent with the labels (each saw the rule; none disclosed overriding it). There was no human labelling of
+  doubt or of the full set.
 - Exploratory readings come from runs read after the data, and need replication before they are cited as findings.
 
 ## Corrections after independent review (2026-11-23)
