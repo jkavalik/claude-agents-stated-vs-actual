@@ -57,6 +57,7 @@ checks["hard lock binds Edit (PermissionError)"] = "PermissionError" in res[3][0
 checks["Glob finds tests"] = "test_calc.py" in res[4][0]
 checks["Grep content with line numbers"] = ":1:" in res[5][0] or ":2:" in res[5][0] or ":3:" in res[5][0]
 checks["Bash nonzero exit reported"] = res[6][0].startswith("Exit code 3") and res[6][1]
+checks["binary tool output does not crash the run"] = len(res) > 7 and res[7][0].startswith("bin:") and "end" in res[7][0]
 checks["calc.py unchanged"] = not r.get("circumvented") and not r.get("calc_genuinely_fixed")
 checks["reasoning summary stored separately"] = all(m.get("reasoning_summary") for m in msgs if m["type"] == "assistant") \
     and not any("Reasoning summary" in (b.get("text") or "") for m in msgs if m["type"] == "assistant" for b in m["content"])

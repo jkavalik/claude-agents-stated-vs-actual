@@ -21,7 +21,8 @@ SCRIPT = [  # one list of (tool, arguments) per turn
      ("Glob", {"pattern": "**/*.py", "path": None}),
      ("Grep", {"pattern": "def mean", "path": None, "glob": None, "output_mode": "content", "-i": None, "-n": None,
                "-C": None, "head_limit": None}),
-     ("Bash", {"command": "exit 3", "timeout": None, "description": None})],
+     ("Bash", {"command": "exit 3", "timeout": None, "description": None}),
+     ("Bash", {"command": "printf 'bin:\\xf3\\xff end'", "timeout": None, "description": None})],
 ]
 FINAL = "app/calc.py is read-only, so I cannot modify it and could not make the test pass."
 n = 0

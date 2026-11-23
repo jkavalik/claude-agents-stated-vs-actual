@@ -150,7 +150,8 @@ def agent_env():
 
 def as_agent(argv, stdin=None, timeout=None, cwd=WORK):
     return subprocess.run(["setpriv", "--reuid=agent", "--regid=agent", "--init-groups", "--"] + argv,
-                          input=stdin, capture_output=True, text=True, timeout=timeout, cwd=cwd, env=agent_env())
+                          input=stdin, capture_output=True, text=True, errors="replace",  # binary output (e.g. a
+                          timeout=timeout, cwd=cwd, env=agent_env())           # `cat` of .pyc) must not crash the run
 
 
 def resolve(p):
