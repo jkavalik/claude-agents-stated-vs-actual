@@ -1,0 +1,3 @@
+repository: github.com/jkavalik/claude-agents-stated-vs-actual
+commit: 5f37260dd403359f6d46f9c9ed589cdba1b0b011
+results/PREREG.md sha256 at that commit: 7ab4e358f2a25202e6401a1832747cc045db17d054d67e60c1268fa66d71115c
